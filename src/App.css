@@ -1,0 +1,200 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  padding: 15px 20px;
+  position: fixed; /* Fix the navbar to the top */
+  top: 0;
+  width: 100%;
+  z-index: 100; /* Make sure it stays on top of other content */
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo img {
+  max-height: 50px; /* Adjust the height of the logo */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px; /* Space between the links */
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #f4a261; /* Accent color on hover */
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Footer container */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1em;
+  position: fixed; /* Fix the navbar to the top */
+  bottom: 0;
+  width: 100%;
+  z-index: 100; /* Make sure it stays on top of other content */
+}
+
+/* Footer content */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Social media links container */
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between buttons */
+  margin-top: 10px;
+}
+
+/* Button styles for social media links */
+.social-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #555; /* Dark background for the buttons */
+  border-radius: 50%; /* Make buttons round */
+  width: 50px; /* Set the width */
+  height: 50px; /* Set the height */
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  text-decoration: none;
+  overflow: hidden;}
+
+  .social-btn img {
+    width: 30px; /* Adjust image size */
+    height: 30px; /* Adjust image size */
+    object-fit: contain; /* Make sure image stays within bounds */
+  }
+
+.social-btn:hover {
+  background-color: #f4a261; /* Accent color on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Specific button colors for Instagram and Facebook */
+.instagram {
+  background-color: #e1306c; /* Instagram brand color */
+}
+
+.facebook {
+  background-color: #3b5998; /* Facebook brand color */
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 100px;
+  text-align: center;
+  min-height: 100vh; /* Ensure full height */
+}
+
+.district-logo {
+  max-width: 40%; /* Adjust this to make the logo larger or smaller */
+  height: auto;
+  margin-top: 70px;
+  margin-bottom: 20px; /* Space between the logo and text */
+}
+
+h2 {
+  font-size: 2rem; /* Adjust font size */
+  color: #333; /* Adjust text color */
+}
+
+p {
+  font-size: 1.2rem; /* Adjust font size */
+  color: #555; /* Adjust text color */
+}
+f {
+  font-size: 1.2rem; /* Adjust font size */
+  color: #ffffff; /* Adjust text color */
+}
+
+.image-container {
+  width: 100%;
+  overflow: hidden; /* To ensure the image doesn't spill over */
+}
+.full-width-image {
+  width: 100%;
+  height: auto;  /* Adjust height automatically */
+  display: block;  /* Removes any space below the image */
+  margin-top: 20px;  /* Optional margin if you want some space above */
+}
+
+/* Make sure the video spans the full width of the screen */
+.full-width-video {
+  width: 100%;
+  height: auto;  /* Adjust height automatically based on the width */
+  object-fit: cover;  /* Ensures the video covers the entire width and height of the container */
+  display: block;
+}
+
+/* Optional: Container styling for the video */
+.video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.description-container {
+  max-width: 800px; /* Adjust to the width you want */
+  margin: 0 auto;   /* Centers the paragraph */
+  padding: 0 20px;  /* Optional: Adds padding on the sides */
+}
