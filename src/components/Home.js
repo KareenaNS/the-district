@@ -8,17 +8,28 @@ function Home() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
     // Array of image sources for the slideshow
+    // const images = [
+    //   '/storefront.png',
+    //   '/house.jpg',
+    //   '/storefront2.jpg',
+    //   '/house2.jpg',
+    //   '/storefront3.jpg',
+    //   '/house3.jpg',
+    //   '/storefront4.jpg',
+    //   '/house4.jpg',
+    // ];
     const images = [
-      '/storefront.png',
-      '/house.jpg',
-      '/storefront2.jpg',
-      '/house2.jpg',
-      '/storefront3.jpg',
-      '/house3.jpg',
-      '/storefront4.jpg',
-      '/house4.jpg',
+      process.env.PUBLIC_URL + '/storefront.png',
+      process.env.PUBLIC_URL + '/house.jpg',
+      process.env.PUBLIC_URL + '/storefront2.jpg',
+      process.env.PUBLIC_URL + '/house2.jpg',
+      process.env.PUBLIC_URL + '/storefront3.jpg',
+      process.env.PUBLIC_URL + '/house3.jpg',
+      process.env.PUBLIC_URL + '/storefront4.jpg',
+      process.env.PUBLIC_URL + '/house4.jpg',
     ];
-  
+    
+
     // Function to change the image index
     const nextImage = () => {
       setCurrentImageIndex((prevIndex) =>
@@ -33,12 +44,17 @@ function Home() {
   return (
     <div className="home-container">
       <div className="video-container">
-        <video className="full-width-video" autoPlay loop muted>
+        {/* <video className="full-width-video" autoPlay loop muted>
           <source src="/drone.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
+        <video className="full-width-video" autoPlay loop muted>
+  <source src={process.env.PUBLIC_URL + '/drone.mp4'} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
       </div>
-      <img src="/district.png" alt="The District" className="district-logo" />
+      <img src={process.env.PUBLIC_URL + '/district.png'} alt="The District" className="district-logo" />
       <h2>Welcome to The District</h2>
       <div className="description-container">
         <p>
@@ -50,8 +66,8 @@ function Home() {
 
       <div className="info-columns">
         <div className="column">
-          <img src="/storefront.png" alt="Leasing a Suite" className="column-image" />
-          <h3>Leasing a Suite</h3>
+        <img src={process.env.PUBLIC_URL + '/storefront.png'} alt="Leasing a Suite" className="column-image" />
+        <h3>Leasing a Suite</h3>
           <p>
             Discover premium suites available for leasing at The District, perfect for businesses
             or private events.
@@ -61,8 +77,8 @@ function Home() {
           </Link>
         </div>
         <div className="column">
-          <img src="/hosting.jpg" alt="Leasing a Suite" className="column-image" />
-          <h3>Hosting Your Event</h3>
+        <img src={process.env.PUBLIC_URL + '/hosting.jpg'} alt="Leasing a Suite" className="column-image" />
+        <h3>Hosting Your Event</h3>
           <p>
             Book and host your own event with ease. Our venue offers exceptional services to make your event memorable.
           </p>
@@ -71,8 +87,8 @@ function Home() {
           </Link>
         </div>
         <div className="column">
-          <img src="/city.jpg" alt="Leasing a Suite" className="column-image" />
-          <h3>City-Hosted Events</h3>
+        <img src={process.env.PUBLIC_URL + '/city.jpg'} alt="Leasing a Suite" className="column-image" />
+        <h3>City-Hosted Events</h3>
           <p>
             Join us for events organized by the city, from concerts to festivals, right here at The District.
           </p>
