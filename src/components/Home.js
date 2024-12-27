@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from React Router for navigation
+
 import '../App.css'; // Import App.css for global styling
 
 function Home() {
@@ -7,10 +9,14 @@ function Home() {
   
     // Array of image sources for the slideshow
     const images = [
-      '/bg.png',
-      '/image2.jpg',
-      '/image3.jpg',
-      '/image4.jpg'
+      '/storefront.png',
+      '/house.jpg',
+      '/storefront2.jpg',
+      '/house2.jpg',
+      '/storefront3.jpg',
+      '/house3.jpg',
+      '/storefront4.jpg',
+      '/house4.jpg',
     ];
   
     // Function to change the image index
@@ -20,7 +26,7 @@ function Home() {
       );
     };
     useEffect(() => {
-      const intervalId = setInterval(nextImage, 3000); // 3000ms = 3 seconds
+      const intervalId = setInterval(nextImage, 5000); // 3000ms = 3 seconds
       return () => clearInterval(intervalId); // Clear the interval when the component is unmounted
     }, []);
 
@@ -38,15 +44,50 @@ function Home() {
         <p>
           Your premier outdoor event venue! Located 15 minutes from Atlanta's Hartsfield-Jackson Airport,
           The District contains a variety of fun activities for families, including shops, live music,
-          and events once a month! Scroll down for more details about our venue and services.
+          and events once a month. Scroll down for more details about our venue and services!
         </p>
       </div>
-      <div className="image-container">
-          <img src="/bg.png" alt="Event Image" className="full-width-image" />
+
+      <div className="info-columns">
+        <div className="column">
+          <img src="/storefront.png" alt="Leasing a Suite" className="column-image" />
+          <h3>Leasing a Suite</h3>
+          <p>
+            Discover premium suites available for leasing at The District, perfect for businesses
+            or private events.
+          </p>
+          <Link to="/leasing">
+            <button className="column-button">Learn More</button>
+          </Link>
+        </div>
+        <div className="column">
+          <img src="/hosting.jpg" alt="Leasing a Suite" className="column-image" />
+          <h3>Hosting Your Event</h3>
+          <p>
+            Book and host your own event with ease. Our venue offers exceptional services to make your event memorable.
+          </p>
+          <Link to="/booking">
+            <button className="column-button">Learn More</button>
+          </Link>
+        </div>
+        <div className="column">
+          <img src="/city.jpg" alt="Leasing a Suite" className="column-image" />
+          <h3>City-Hosted Events</h3>
+          <p>
+            Join us for events organized by the city, from concerts to festivals, right here at The District.
+          </p>
+          <Link to="/events">
+            <button className="column-button">Learn More</button>
+          </Link>
+        </div>
       </div>
-        
-
-
+      <div className="slideshow-container">
+        <img
+          src={images[currentImageIndex]} // Display the current image based on index
+          alt="Event Image"
+          className="slideshow-image"
+        />
+      </div>
     </div>
   );
 }
