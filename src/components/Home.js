@@ -77,7 +77,7 @@ function Home() {
           </Link>
         </div>
         <div className="column">
-        <img src={process.env.PUBLIC_URL + '/hosting.jpg'} alt="Leasing a Suite" className="column-image" />
+        <img src={process.env.PUBLIC_URL + '/hosting.jpg'} alt="Hosting an Event" className="column-image" />
         <h3>Hosting Your Event</h3>
           <p>
             Book and host your own event with ease. Our venue offers exceptional services to make your event memorable.
@@ -87,7 +87,7 @@ function Home() {
           </Link>
         </div>
         <div className="column">
-        <img src={process.env.PUBLIC_URL + '/city.jpg'} alt="Leasing a Suite" className="column-image" />
+        <img src={process.env.PUBLIC_URL + '/city.jpg'} alt="City-Hosted Events" className="column-image" />
         <h3>City-Hosted Events</h3>
           <p>
             Join us for events organized by the city, from concerts to festivals, right here at The District.

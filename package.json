@@ -8,9 +8,11 @@
     "cors": "^2.8.5",
     "cra-template": "1.2.0",
     "dotenv": "^16.4.7",
+    "emailjs-com": "^3.2.0",
     "express": "^4.21.2",
     "nodemailer": "^6.9.16",
     "react": "^19.0.0",
+    "react-calendar": "^5.1.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.1",
     "react-scripts": "5.0.1",
@@ -45,5 +47,5 @@
   "devDependencies": {
     "gh-pages": "^6.2.0"
   },
-"homepage": "https://kareenans.github.io/the-district"
+  "homepage": "https://kareenans.github.io/the-district"
 }

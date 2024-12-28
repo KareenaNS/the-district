@@ -1,43 +1,54 @@
-import React, { useState, useEffect } from 'react';
-import '../App.css'; // Import App.css for global styling
+import React from 'react';
+import '../App.css'; // Import your CSS file for styling
 
 function Gallery() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-  // Array of image sources for the slideshow
+  // Array of image sources for your gallery
   const images = [
-    '/storefront.png',
-    '/house.jpg',
-    '/storefront2.jpg',
-    '/house2.jpg',
-    '/storefront3.jpg',
-    '/house3.jpg',
-    '/storefront4.jpg',
-    '/house4.jpg',
+    process.env.PUBLIC_URL + '/events/1.jpg',
+    process.env.PUBLIC_URL + '/events/2.jpg',
+    process.env.PUBLIC_URL + '/events/3.jpg',
+    process.env.PUBLIC_URL + '/events/4.jpg',
+    process.env.PUBLIC_URL + '/events/5.jpg',
+    process.env.PUBLIC_URL + '/events/6.jpg',
+    process.env.PUBLIC_URL + '/events/7.jpg',
+    process.env.PUBLIC_URL + '/events/8.jpg',
+    process.env.PUBLIC_URL + '/events/9.jpg',
+    process.env.PUBLIC_URL + '/events/10.jpg',
+    process.env.PUBLIC_URL + '/events/11.jpg',
+    process.env.PUBLIC_URL + '/events/12.jpg',
+    process.env.PUBLIC_URL + '/events/13.jpg',
+    process.env.PUBLIC_URL + '/events/14.jpg',
+    process.env.PUBLIC_URL + '/events/15.jpg',
+    process.env.PUBLIC_URL + '/events/16.jpg',
+    process.env.PUBLIC_URL + '/events/17.jpg',
+    process.env.PUBLIC_URL + '/events/18.jpg',
+    process.env.PUBLIC_URL + '/events/19.jpg',
+    process.env.PUBLIC_URL + '/events/20.jpg',
+    process.env.PUBLIC_URL + '/events/21.jpg',
+    process.env.PUBLIC_URL + '/events/22.jpg',
+    process.env.PUBLIC_URL + '/events/23.jpg',
+    process.env.PUBLIC_URL + '/events/24.jpg',
+    process.env.PUBLIC_URL + '/events/25.jpg',
+    process.env.PUBLIC_URL + '/events/26.jpg',
+    process.env.PUBLIC_URL + '/events/27.jpg',
+    process.env.PUBLIC_URL + '/events/28.jpg',
+    process.env.PUBLIC_URL + '/events/29.jpg',
+    process.env.PUBLIC_URL + '/events/30.jpg',
+    process.env.PUBLIC_URL + '/events/31.jpg',
+    process.env.PUBLIC_URL + '/events/32.jpg',
   ];
 
-  // Function to change the image index
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-  useEffect(() => {
-    const intervalId = setInterval(nextImage, 5000); // 3000ms = 3 seconds
-    return () => clearInterval(intervalId); // Clear the interval when the component is unmounted
-  }, []);
   return (
-    <div>
+    <div className="gallery-container">
       <h2>Gallery</h2>
-      <div className="gallery-container">
-        <img
-          src={images[currentImageIndex]} // Display the current image based on index
-          alt="Event Image"
-          className="slideshow-image"
-        />
+      <div className="gallery-grid">
+        {images.map((image, index) => (
+          <div key={index} className="gallery-item">
+            <img src={image} alt={`Gallery Image ${index + 1}`} className="gallery-image" />
+          </div>
+        ))}
       </div>
     </div>
-    
   );
 }
 

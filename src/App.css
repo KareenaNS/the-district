@@ -260,17 +260,125 @@ footer {
   text-align: center; /* Center align the button */
 }
 
+/* General container for the Booking page */
+.booking-container {
+  padding: 40px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+/* Header styling */
+.booking-header h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #0044cc; /* Blue color */
+}
+
+.intro-text {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Contact info section styling */
+.contact-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.contact-info p {
+  font-size: 18px;
+}
+
+.contact-info .contact-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0044cc;
+}
+
+.contact-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Call to action section */
+.cta-section {
+  margin-top: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #0044cc;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cta-button:hover {
+  background-color: #0033aa;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .booking-container {
+    padding: 20px;
+  }
+
+  .booking-header h2 {
+    font-size: 28px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+}
+
 
 .gallery-container {
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Auto-adjusts number of columns */
+  gap: 15px; /* Space between images */
+  padding: 10px;
+}
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.gallery-image {
   width: 100%;
-  height: 600px; /* Adjust the height based on your design */
-  overflow: hidden; /* Prevents images from overflowing the container */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin-bottom: 110px;
-  margin-top: -15px;
+  height: auto;
+  object-fit: cover; /* Ensures the image fits the container */
+  transition: transform 0.3s ease;
+}
+.gallery-item:hover .gallery-image {
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 /* Style for the images */
@@ -351,4 +459,67 @@ f {
   max-width: 800px; /* Adjust to the width you want */
   margin: 0 auto;   /* Centers the paragraph */
   padding: 0 20px;  /* Optional: Adds padding on the sides */
+}
+
+/* events.css */
+.events-container {
+  padding: 2rem;
+  margin-top: 125px;
+  margin-bottom: 150px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.info-section {
+  margin-bottom: 3rem;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.info-card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  width: 30%;
+}
+
+.events-list {
+  margin-bottom: 3rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.event-card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.calendar-section {
+  text-align: center;
+}
+
+.react-calendar {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
 }
