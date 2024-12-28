@@ -44,14 +44,14 @@ function Home() {
   return (
     <div className="home-container">
       <div className="video-container">
-        {/* <video className="full-width-video" autoPlay loop muted>
-          <source src="/drone.mp4" type="video/mp4" />
+      <video className="full-width-video" autoPlay loop muted>
+        <source src="https://kareenans.github.io/the-district/drone.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+                {/* <video className="full-width-video" autoPlay loop muted>
+          <source src={process.env.PUBLIC_URL + '/drone.mp4'} type="video/mp4" />
           Your browser does not support the video tag.
         </video> */}
-        <video className="full-width-video" autoPlay loop muted>
-  <source src={process.env.PUBLIC_URL + '/drone.MP4'} type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
 
       </div>
       <img src={process.env.PUBLIC_URL + '/district.png'} alt="The District" className="district-logo" />

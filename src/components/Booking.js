@@ -7,7 +7,7 @@ function Booking() {
       <div className="booking-header">
         <h2>Booking Information</h2>
         <p className="intro-text">
-          If you are interested in booking a space, please contact Kimberly Summerlin for more information.
+          If you are interested in booking a space, please contact the events department for more information.
         </p>
       </div>
 
@@ -15,8 +15,8 @@ function Booking() {
         <p className="contact-title">Contact Information</p>
         <p>
           <strong>Email:</strong>
-          <a className="contact-link" href="mailto:ksummerlin@morrowga.gov">
-            ksummerlin@morrowga.gov
+          <a className="contact-link" href="mailto:events@morrowga.gov">
+          events@morrowga.gov
           </a>
         </p>
         <p>
@@ -27,8 +27,8 @@ function Booking() {
 
       <div className="cta-section">
         <p>Ready to get started?</p>
-        <a className="cta-button" href="mailto:ksummerlin@morrowga.gov">
-          Contact Kimberly Now
+        <a className="cta-button" href="mailto:events@morrowga.gov">
+          Contact Us Now
         </a>
       </div>
     </div>

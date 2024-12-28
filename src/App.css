@@ -284,6 +284,46 @@ footer {
   color: #666;
   margin-top: 10px;
 }
+.sponsor-image {
+  width: 100%; /* Adjust this as needed */
+  height: auto;
+  margin-top: 10px; /* Space between text and image */
+  border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+/* Container for search bar and sort button */
+.search-sort-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Style for the search input */
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px; /* Adjust width as needed */
+  margin-right: 10px; /* Space between search bar and sort button */
+}
+
+/* Style for the sort button */
+.sort-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sort-button:hover {
+  background-color: #0056b3;
+}
+
 
 /* Contact info section styling */
 .contact-info {
@@ -464,7 +504,7 @@ f {
 /* events.css */
 .events-container {
   padding: 2rem;
-  margin-top: 125px;
+  margin-top: 100px;
   margin-bottom: 150px;
 }
 
@@ -517,9 +557,173 @@ h1 {
 .calendar-section {
   text-align: center;
 }
+/* Styling for the event calendar */
+.calendar-section {
+  margin-top: 30px;
+  background-color: #f8f9fa;
+  padding: 30px; /* More padding to give space around the calendar */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure it's full-width */
+  max-width: 1000px; /* Limit the width to 1000px or any other size you prefer */
+  margin: 0 auto; /* Center the calendar */
+}
 
+.calendar-section h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+/* Style the react-calendar component */
 .react-calendar {
-  max-width: 100%;
+  width: 100%; /* Make sure it takes up the full width of its container */
+  max-width: 100%; /* Ensure it doesn’t shrink beyond its container's size */
   margin: 0 auto;
-  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px; /* Adjust font size for better visibility */
+}
+
+/* Styling for the calendar navigation buttons (previous and next month) */
+.react-calendar__navigation button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.react-calendar__navigation button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the days of the week header */
+.react-calendar__month-view__days__day {
+  font-weight: bold;
+  font-size: 14px;
+  color: #495057;
+  text-align: center;
+}
+
+/* Style for the individual day cells */
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #6c757d;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #dc3545; /* Red color for weekends */
+}
+
+/* Style for today’s date */
+.react-calendar__tile--active {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+}
+
+.react-calendar__tile--active:hover {
+  background-color: #0056b3;
+}
+
+/* Style for date hover */
+.react-calendar__tile:hover {
+  background-color: #e9ecef;
+  cursor: pointer;
+}
+
+/* Adding styles for the selected date */
+.react-calendar__tile--hasActive {
+  background-color: #28a745;
+  color: white;
+}
+
+.react-calendar__tile--hasActive:hover {
+  background-color: #218838;
+}
+/* Make the calendar responsive on smaller screens */
+@media (max-width: 768px) {
+  .calendar-section {
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+
+  .react-calendar {
+    font-size: 16px; /* Slightly smaller font on mobile */
+  }
+}
+
+/* App.css */
+
+/* General container */
+.landing-page-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+/* Headings */
+h1, h2 {
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+/* Event details */
+.event-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+/* Flyer image */
+.flyer-image {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Vendor & Sponsor Information */
+.vendor-info, .sponsor-info {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vendor-info ul, .sponsor-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.vendor-info li, .sponsor-info li {
+  margin-bottom: 10px;
+}
+
+/* Map section */
+.map-section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.district-map {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }

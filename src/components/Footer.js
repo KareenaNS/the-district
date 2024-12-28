@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <f>&copy; 2024 The District | All Rights Reserved</f>
+        <f>&copy; 2025 The District | All Rights Reserved</f>
         <div className="social-media">
           <a href="https://www.instagram.com/visitmorrowga/" target="_blank" rel="noopener noreferrer" className="social-btn instagram">
           <img src={process.env.PUBLIC_URL + '/instagram.png'} alt="The District" className="navbar-image" />
