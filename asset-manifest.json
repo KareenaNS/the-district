@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/the-district/static/css/main.0eb385a7.css",
-    "main.js": "/the-district/static/js/main.6adc9437.js",
+    "main.js": "/the-district/static/js/main.9993f972.js",
     "index.html": "/the-district/index.html",
     "main.0eb385a7.css.map": "/the-district/static/css/main.0eb385a7.css.map",
-    "main.6adc9437.js.map": "/the-district/static/js/main.6adc9437.js.map"
+    "main.9993f972.js.map": "/the-district/static/js/main.9993f972.js.map"
   },
   "entrypoints": [
     "static/css/main.0eb385a7.css",
-    "static/js/main.6adc9437.js"
+    "static/js/main.9993f972.js"
   ]
 }
