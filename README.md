@@ -17,8 +17,6 @@ React-Router: For navigating between different pages within the app.
 React-Calendar: For displaying events in a calendar view.
 
 ## File Structure
-scss
-Copy code
 the-district/
 ├── public/
 │   └── images/
@@ -47,13 +45,7 @@ Grid Layout: Features a grid of images related to the venue and events.
 Contact
 
 License
-All Rights Reserved
-
-Notes:
-Customization: If you decide to host this app online (for example, using GitHub Pages), you might want to customize the README to include links or steps for deploying the app.
-Email Service: Ensure that your EmailJS setup is correctly configured to handle email submissions.
-Dependencies: Double-check the versions of the libraries used in the package.json file and the required configurations for react-router-dom, react-calendar, and EmailJS.
-This README provides clear documentation for setting up the project and offers details about its features.
+All Rights Reserved 2025
 
 # Getting Started with Create React App
 

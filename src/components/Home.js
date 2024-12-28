@@ -49,7 +49,7 @@ function Home() {
           Your browser does not support the video tag.
         </video> */}
         <video className="full-width-video" autoPlay loop muted>
-  <source src={process.env.PUBLIC_URL + '/drone.mp4'} type="video/mp4" />
+  <source src={process.env.PUBLIC_URL + '/drone.MP4'} type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 
@@ -77,7 +77,7 @@ function Home() {
           </Link>
         </div>
         <div className="column">
-        <img src={process.env.PUBLIC_URL + '/hosting.jpg'} alt="Hosting an Event" className="column-image" />
+        <img src={process.env.PUBLIC_URL + '/hosting.JPG'} alt="Hosting an Event" className="column-image" />
         <h3>Hosting Your Event</h3>
           <p>
             Book and host your own event with ease. Our venue offers exceptional services to make your event memorable.
