@@ -9,6 +9,7 @@ import Leasing from './components/Leasing';
 import Booking from './components/Booking';
 import Contact from './components/Contact';
 import BlackHistoryMonth from './components/BlackHistoryMonth';
+import LunarNewYear from './components/LunarNewYear';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<Events />} />
           <Route path="/BlackHistoryMonth" element={<BlackHistoryMonth />} />
+          <Route path="/LunarNewYear" element={<LunarNewYear />} />
         </Routes>
         <Footer />
       </div>

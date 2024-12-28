@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css'; // Import styles from App.css
 import Calendar from 'react-calendar'; // Importing a simple calendar component
 
@@ -10,7 +11,7 @@ const events = [
     date: '01/25/25 - 01/26/25',
     time: '10:00 AM - 12:00 AM',
     imageUrl: '/lny.png',
-    link: 'https://www.morrowcenter.com/event-details/lunar-new-year-year-of-the-snake', // Link to detailed event page
+    link: '/LunarNewYear',
   },
   {
     name: 'Black History Month',
@@ -18,6 +19,8 @@ const events = [
     date: '02/22/25 - 02/23/25',
     time: 'TBD',
     imageUrl: '/bhm25.png',
+    link: '/BlackHistoryMonth',
+
   },
   {
     name: "St. Patrick's Day",
@@ -175,11 +178,11 @@ function Events() {
               <p>{event.description}</p>
               <p><strong>Date:</strong> {event.date}</p>
               <p><strong>Time:</strong> {event.time}</p>
-              {event.link && (
-                <a href={event.link} target="_blank" rel="noopener noreferrer">
-                  <button className="event-button">Learn More</button>
-                </a>
-              )}
+                {event.link && (
+                  <Link to={event.link}>
+                    <button className="event-button">Learn More</button>
+                  </Link>
+                )}
             </div>
           ))}
         </div>
