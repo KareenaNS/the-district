@@ -7,7 +7,7 @@ function Navbar() {
       <div className="navbar-content">
         {/* Replace text with an image */}
         <a href="/" className="navbar-logo">
-          <img src="/district.png" alt="The District" className="navbar-image" />
+        <img src={process.env.PUBLIC_URL + '/district.png'} alt="The District" className="navbar-image" />
         </a>
         <ul className="navbar-links">
         <li><a href="/events">Events</a></li>
