@@ -660,7 +660,8 @@ h1 {
 /* General Styling for the Page */
 .landing-page-container {
   font-family: Arial, sans-serif;
-  margin: 0;
+  margin-top: 90px;
+  margin-bottom: 90px;
   padding: 20px;
   background-color: #f0f0f0;
   color: #333;
@@ -769,14 +770,6 @@ ul li {
   line-height: 1.6;
 }
 
-.district-map {
-  width: 100%;
-  max-width: 800px;
-  margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   h1 {
@@ -808,15 +801,7 @@ ul li {
 
 
 
-  map-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px; /* Space between image and iframe */
-    align-items: flex-start; /* Aligns both elements at the top */
-    max-width: 1200px; /* Ensures the container won't overflow */
-    flex-wrap: wrap; /* Ensures items stack on smaller screens */
-    margin-bottom: 150px;
-  }
+
 iframe {
     flex: 1;
     width: 100%; /* Fixed width for the iframe */
