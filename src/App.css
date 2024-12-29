@@ -3,7 +3,91 @@ body {
   margin: 0;
   padding: 0;
 }
+/* General Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 15px 20px;
+  position: fixed; /* Fix the navbar to the top */
+  top: 0;
+  width: 100%;
+  z-index: 100; /* Ensure it stays above other content */
+}
 
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo img {
+  max-height: 50px; /* Adjust the height of the logo */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Menu Links */
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px; /* Space between the links */
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #f4a261; /* Accent color on hover */
+}
+
+/* Responsive Menu Styles */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+  .navbar-content {
+      flex-wrap: nowrap; /* Prevent unintended wrapping */
+      overflow: hidden; /* Ensure the navbar doesn't overflow the viewport */
+  }
+
+  .navbar-links {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow links to wrap if necessary */
+    gap: 20px; /* Space between links */
+    justify-content: flex-end; /* Align links to the right */
+  }
+  
+  .navbar-links.open {
+    display: flex; /* Show menu when toggled */
+  }
+  
+
+  .menu-toggle {
+    display: block; /* Show menu toggle button */
+  }
+
+  .navbar-links li {
+    margin: 0;
+  }
+
+  .navbar-links li a {
+    font-size: 18px; /* Larger font for easier tapping */
+    padding: 10px 0;
+  }
+}
+
+
+/* 
 nav {
   background-color: #333;
   color: white;
@@ -40,8 +124,10 @@ nav ul li a {
 
 .navbar-content {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  overflow-x: auto; /* Allow horizontal scrolling if necessary */
 }
 
 .navbar-logo img {
@@ -50,9 +136,12 @@ nav ul li a {
 }
 
 .navbar-links {
-  list-style-type: none;
-  display: flex;
-  gap: 20px; /* Space between the links */
+  flex-wrap: nowrap; /* Prevent wrapping of links */
+  gap: 20px;
+}
+
+.navbar-links li {
+  white-space: nowrap; /* Prevent text from breaking into multiple lines */
 }
 
 .navbar-links li a {
@@ -60,11 +149,12 @@ nav ul li a {
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s ease;
+  margin-right: 50px;
 }
 
 .navbar-links li a:hover {
   color: #f4a261; /* Accent color on hover */
-}
+} */
 
 
 footer {
