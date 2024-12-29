@@ -49,10 +49,17 @@ function Home() {
           <source src={process.env.PUBLIC_URL + '/drones.mp4'} type="video/mp4" />
           Your browser does not support the video tag.
         </video> */}
-            <video className="full-width-video" autoPlay loop muted>
-      <source src={process.env.REACT_APP_VIDEO_URL} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video> 
+      <video 
+        className="full-width-video" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        controls={false} // Optional: Hide controls for a clean look
+      >
+        <source src={process.env.REACT_APP_VIDEO_URL} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
       </div>
       <img src={process.env.PUBLIC_URL + '/district.png'} alt="The District" className="district-logo" />

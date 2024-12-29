@@ -588,10 +588,16 @@ f {
 
 /* Make sure the video spans the full width of the screen */
 .full-width-video {
-  width: 100%;
-  height: auto;  /* Adjust height automatically based on the width */
-  object-fit: cover;  /* Ensures the video covers the entire width and height of the container */
-  display: block;
+  width: 100%; /* Video takes full width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 80vh; /* Limit height for smaller screens */
+  object-fit: cover; /* Crops video edges while maintaining the aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .full-width-video {
+    max-height: 60vh; /* Further limit height for mobile screens */
+  }
 }
 
 /* Optional: Container styling for the video */

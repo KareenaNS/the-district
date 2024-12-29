@@ -239,7 +239,7 @@ function Leasing() {
 
         {/* Right: Suites image */}
         <img
-          src="suites.png"
+          src="Suites.png"
           alt="Suites"
           style={{
             width: '50%',

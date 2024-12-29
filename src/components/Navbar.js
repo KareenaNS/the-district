@@ -43,7 +43,9 @@ function Navbar() {
         <Link to="/" className="navbar-logo">
           <img src={process.env.PUBLIC_URL + '/district.png'} alt="The District" className="navbar-image" />
         </Link>
-
+        <button className="menu-toggle" onClick={toggleMenu}>
+          ☰
+        </button>
         <ul className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
         <li><Link to="/events">Events</Link></li>
           <li><Link to="/leasing">Leasing</Link></li>
