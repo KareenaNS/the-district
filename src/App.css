@@ -3,14 +3,13 @@ body {
   margin: 0;
   padding: 0;
 }
-/* General Navbar Styles */
 .navbar {
   background-color: #333;
   padding: 15px 20px;
-  position: fixed; /* Fix the navbar to the top */
+  position: fixed; 
   top: 0;
   width: 100%;
-  z-index: 100; /* Ensure it stays above other content */
+  z-index: 100; 
 }
 
 .navbar-content {
@@ -20,15 +19,14 @@ body {
 }
 
 .navbar-logo img {
-  max-height: 50px; /* Adjust the height of the logo */
-  width: auto; /* Maintain aspect ratio */
+  max-height: 50px;
+  width: auto; 
 }
 
-/* Menu Links */
 .navbar-links {
   list-style-type: none;
   display: flex;
-  gap: 20px; /* Space between the links */
+  gap: 20px;
 }
 
 .navbar-links li a {
@@ -39,10 +37,9 @@ body {
 }
 
 .navbar-links li a:hover {
-  color: #f4a261; /* Accent color on hover */
+  color: #f4a261;
 }
 
-/* Responsive Menu Styles */
 .menu-toggle {
   display: none;
   font-size: 24px;
@@ -52,28 +49,27 @@ body {
   cursor: pointer;
 }
 
-/* Styles for smaller screens */
 @media (max-width: 768px) {
   .navbar-content {
-      flex-wrap: nowrap; /* Prevent unintended wrapping */
-      overflow: hidden; /* Ensure the navbar doesn't overflow the viewport */
+      flex-wrap: nowrap; 
+      overflow: hidden;
   }
 
   .navbar-links {
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap; /* Allow links to wrap if necessary */
-    gap: 20px; /* Space between links */
-    justify-content: flex-end; /* Align links to the right */
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: flex-end; 
   }
   
   .navbar-links.open {
-    display: flex; /* Show menu when toggled */
+    display: flex; 
   }
   
 
   .menu-toggle {
-    display: block; /* Show menu toggle button */
+    display: block; 
   }
 
   .navbar-links li {
@@ -81,38 +77,11 @@ body {
   }
 
   .navbar-links li a {
-    font-size: 18px; /* Larger font for easier tapping */
+    font-size: 18px;
     padding: 10px 0;
   }
 }
 
-
-/* 
-nav {
-  background-color: #333;
-  color: white;
-  padding: 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1em;
-}
-
-nav ul li {
-  margin: 0;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Navbar styles */
 .navbar {
   background-color: #333;
   padding: 15px 20px;
@@ -127,21 +96,21 @@ nav ul li a {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  overflow-x: auto; /* Allow horizontal scrolling if necessary */
+  overflow-x: auto; 
 }
 
 .navbar-logo img {
-  max-height: 50px; /* Adjust the height of the logo */
-  width: auto; /* Maintain aspect ratio */
+  max-height: 50px; 
+  width: auto; 
 }
 
 .navbar-links {
-  flex-wrap: nowrap; /* Prevent wrapping of links */
+  flex-wrap: nowrap; 
   gap: 20px;
 }
 
 .navbar-links li {
-  white-space: nowrap; /* Prevent text from breaking into multiple lines */
+  white-space: nowrap; 
 }
 
 .navbar-links li a {
@@ -153,8 +122,8 @@ nav ul li a {
 }
 
 .navbar-links li a:hover {
-  color: #f4a261; /* Accent color on hover */
-} */
+  color: #f4a261; 
+} 
 
 
 footer {
@@ -581,17 +550,16 @@ f {
 }
 .full-width-image {
   width: 100%;
-  height: auto;  /* Adjust height automatically */
+  height: auto;  
   display: block;  /* Removes any space below the image */
   margin-top: 20px;  /* Optional margin if you want some space above */
 }
 
-/* Make sure the video spans the full width of the screen */
 .full-width-video {
-  width: 100%; /* Video takes full width */
-  height: auto; /* Maintain aspect ratio */
-  max-height: 80vh; /* Limit height for smaller screens */
-  object-fit: cover; /* Crops video edges while maintaining the aspect ratio */
+  width: 100%; 
+  height: auto; 
+  max-height: 80vh; 
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -768,6 +736,10 @@ h1 {
     font-size: 16px; /* Slightly smaller font on mobile */
   }
 }
+.other-month-day {
+  color: #ccc !important; /* Light gray color for days from other months */
+}
+
 
 /* General Styling for the Page */
 .landing-page-container {
@@ -927,3 +899,30 @@ iframe {
 
 
 }
+
+/* 
+nav {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+*/

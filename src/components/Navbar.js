@@ -39,7 +39,6 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-content">
-        {/* Replace text with an image */}
         <Link to="/" className="navbar-logo">
           <img src={process.env.PUBLIC_URL + '/district.png'} alt="The District" className="navbar-image" />
         </Link>
