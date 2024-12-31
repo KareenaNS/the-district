@@ -10,6 +10,7 @@ import Booking from './components/Booking';
 import Contact from './components/Contact';
 import BlackHistoryMonth from './components/BlackHistoryMonth';
 import LunarNewYear from './components/LunarNewYear';
+import StPatricksDay from './components/StPatricksDay';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/BlackHistoryMonth" element={<BlackHistoryMonth />} />
           <Route path="/LunarNewYear" element={<LunarNewYear />} />
+          <Route path="/StPatricksDay" element={<StPatricksDay />} />
         </Routes>
         <Footer />
       </div>

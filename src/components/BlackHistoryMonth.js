@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 
 // Sample image paths and event details
-const flyerImage = '/BlackHistoryMonth.jpg';
+const flyerImage = '/bhmflyer.jpeg';
 const mapImage = '/exhall-map.png';
 
 function BlackHistoryMonth() {
@@ -47,7 +47,7 @@ function BlackHistoryMonth() {
     <section className="pdf-section">
     <h2>Sponsorship Package</h2>
     <iframe
-        src={process.env.PUBLIC_URL + '/sponsor.pdf'}
+        src={process.env.PUBLIC_URL + '/bhm25_sponsor.pdf'}
         width="100%"
         height="600px"
         title="Sponsorship Package"
