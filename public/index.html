@@ -6,6 +6,11 @@
     <meta name="theme-color" content="#000000" />
     <title>The District</title>
     <base href="/the-district/" />
+    <script type="text/javascript">
+      if (window.location.hostname === 'thedistrictmorrow.com') {
+        window.location.href = 'https://www.thedistrictmorrow.com' + window.location.pathname + window.location.search;
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
