@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/the-district/static/css/main.325fc1d1.css",
+    "main.js": "/the-district/static/js/main.2becca21.js",
+    "index.html": "/the-district/index.html",
+    "main.325fc1d1.css.map": "/the-district/static/css/main.325fc1d1.css.map",
+    "main.2becca21.js.map": "/the-district/static/js/main.2becca21.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.325fc1d1.css",
+    "static/js/main.2becca21.js"
+  ]
+}
