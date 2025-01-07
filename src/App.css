@@ -315,6 +315,29 @@ footer {
   align-items: center;
   position: relative;
 }
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  border: none;
+  font-size: 2rem; /* Adjust size */
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10; /* Ensure the arrows are on top of the image */
+}
+.left-arrow {
+  left: 10px; /* Position the left arrow on the left side */
+}
+
+.right-arrow {
+  right: 10px; /* Position the right arrow on the right side */
+}
+
+.arrow-button:hover {
+  background: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
 .learn-more-button {
   background-color: #007bff; /* Blue background */
   color: #fff; /* White text */
@@ -365,36 +388,78 @@ footer {
   margin-top: 10px; /* Space between text and image */
   border-radius: 5px; /* Optional: adds rounded corners */
 }
-
-/* Container for search bar and sort button */
-.search-sort-section {
+.filter-item {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;  /* Stack the slider and text vertically */
+  margin: 20px 0;  /* Add spacing between items */
+}
+.filter-item label {
+  font-size: 16px;  /* Font size for the label */
+  margin-bottom: 10px;  /* Space between the label and the slider */
+}
+.filter-item div {
+  font-size: 14px;  /* Font size for the displayed time range */
+  margin-top: 5px;  /* Space between slider and time range text */
+}
+.time-range-display {
+  font-size: 14px;  /* Font size for the displayed time range */
+  padding-top: 20px;  /* Padding to create extra space between slider and text */
+
+}
+.filter-select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+}
+.time-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.time-range-slider {
+  width: 100%;  /* Make slider take up full width of the container */
+  margin-bottom: 10px;  /* Space between slider and time range display */
+}
+/* Custom styling for the slider's thumb and track */
+.react-slider__track {
+  background-color: #ddd; /* Light gray track */
+  border-radius: 5px; /* Rounded track */
+  height: 6px;  /* Height of the track */
+}
+
+.react-slider__thumb {
+  background-color: #f4a261;  /* Orange thumb color */
+  border-radius: 50%;  /* Round thumb */
+  height: 20px;  /* Thumb size */
+  width: 20px;  /* Thumb size */
+}
+
+.time-range {
+  width: 100%;
+  margin: 5px 0;
+}
+.search-section,
+.filters,
+.sort-section {
   margin-bottom: 20px;
 }
-
-/* Style for the search input */
 .search-input {
-  padding: 8px;
-  font-size: 16px;
+  width: 100%; /* Ensure search input takes full width */
+  padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  width: 200px; /* Adjust width as needed */
-  margin-right: 10px; /* Space between search bar and sort button */
+  border: 1px solid #ddd;
+  box-sizing: border-box; /* Prevent padding from affecting the width */
 }
 
-/* Style for the sort button */
 .sort-button {
   padding: 10px;
-  font-size: 16px;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  width: 100%;
   cursor: pointer;
 }
-
 .sort-button:hover {
   background-color: #0056b3;
 }
@@ -467,13 +532,19 @@ footer {
     padding: 10px 16px;
   }
 }
-
-
+.sponsor-iframe {
+  display: block;
+  width: 100%;        /* Makes iframe width 100% of its parent container */
+  max-width: 100%;    /* Ensures it doesn’t exceed its container's width */
+  max-height: 500px;   /* Limits the height of the iframe */
+  margin: 0 auto;     /* Centers the iframe horizontally */
+  border: none;       /* Removes border */
+}
 .gallery-container {
   text-align: center;
   padding: 20px;
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 0px;
 }
 .gallery-grid {
   display: grid;
@@ -581,11 +652,20 @@ f {
   padding: 0 20px;  /* Optional: Adds padding on the sides */
 }
 
-/* events.css */
 .events-container {
-  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 100px;
   margin-bottom: 150px;
+  text-align: center; /* Horizontally center text */
+
+}
+.sidebar {
+  flex: 0 0 25%; /* Sidebar takes up 25% of the space */
+  background-color: #f9f9f9; /* Optional: add a background color for sidebar */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
 }
 
 h1 {
@@ -612,28 +692,50 @@ h1 {
 }
 
 .events-list {
-  margin-bottom: 3rem;
+  flex: 0 0 65%; /* Events list takes up 70% of the space */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+  
 }
 
 .events-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 20px;
+  max-height: 500px;
+  overflow-y: auto;  /* Enable vertical scrolling if the content exceeds the container's height */
+
 }
 
 .event-card {
-  padding: 1rem;
-  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  text-align: center;
+}
+.event-button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.event-button:hover {
+  background-color: #218838;
 }
 
+.event-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
 .event-card img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 4px;
 }
-
 .calendar-section {
   text-align: center;
 }
@@ -749,6 +851,20 @@ h1 {
 .other-month-day {
   color: #ccc !important; /* Light gray color for days from other months */
 }
+@media (max-width: 768px) {
+  .events-container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .events-grid {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+  }
+}
 
 
 /* General Styling for the Page */
@@ -762,12 +878,16 @@ h1 {
   text-align: center;
 }
 
-/* Heading Style */
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #d32f2f; /* Deep red for a festive look */
+  text-align: center; /* Centers the text horizontally */
+  margin-left: auto; /* Aligns the element automatically to the left */
+  margin-right: auto; /* Aligns the element automatically to the right */
+  width: fit-content; /* Ensures the h1 takes only the space it needs */
 }
+
 
 /* Event Section */
 .event-details {

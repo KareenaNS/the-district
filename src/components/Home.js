@@ -1,23 +1,17 @@
 import React, { useState, useEffect } from 'react';
-  import { Link } from 'react-router-dom'; // Import Link from React Router for navigation
-
+import { Link } from 'react-router-dom'; // Import Link from React Router for navigation
+import emailjs from 'emailjs-com'; // Import the emailjs SDK
 import '../App.css'; // Import App.css for global styling
 
 function Home() {
     // State to manage the current image index
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-    // Array of image sources for the slideshow
-    // const images = [
-    //   '/storefront.png',
-    //   '/house.jpg',
-    //   '/storefront2.jpg',
-    //   '/house2.jpg',
-    //   '/storefront3.jpg',
-    //   '/house3.jpg',
-    //   '/storefront4.jpg',
-    //   '/house4.jpg',
-    // ];
+    const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      interest: '',
+    });
+    const [message, setMessage] = useState('');
     const images = [
       process.env.PUBLIC_URL + '/storefront.png',
       process.env.PUBLIC_URL + '/house.jpg',
@@ -28,27 +22,41 @@ function Home() {
       process.env.PUBLIC_URL + '/storefront4.jpg',
       process.env.PUBLIC_URL + '/house4.jpg',
     ];
-    
-
-    // Function to change the image index
     const nextImage = () => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
     };
+    const prevImage = () => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      );
+    };
     useEffect(() => {
-      const intervalId = setInterval(nextImage, 5000); // 3000ms = 3 seconds
+      const intervalId = setInterval(nextImage, 3000); // 3000ms = 3 seconds
       return () => clearInterval(intervalId); // Clear the interval when the component is unmounted
     }, []);
+
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData({ ...formData, [name]: value });
+    };
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      emailjs
+        .send('service_w3k5b36', 'template_3vqn2cs', formData, 'bKFUVDcGTAD-1R-Aq')
+        .then((response) => {
+          setMessage('Your inquiry has been sent successfully!');
+        })
+        .catch((error) => {
+          setMessage('There was an error sending your inquiry.');
+        });
+    };
 
   return (
     <div className="home-container">
       <div className="video-container">
-
-                {/* <video className="full-width-video" autoPlay loop muted>
-          <source src={process.env.PUBLIC_URL + '/drones.mp4'} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> */}
       <video 
         className="full-width-video" 
         autoPlay 
@@ -105,14 +113,60 @@ function Home() {
           </Link>
         </div>
       </div>
+      {/* Slideshow Section */}
       <div className="slideshow-container">
+        <button className="arrow-button left-arrow" onClick={prevImage}>
+          &#10094; {/* Left Arrow */}
+        </button>
         <img
           src={images[currentImageIndex]} // Display the current image based on index
           alt="Event Image"
           className="slideshow-image"
         />
+        <button className="arrow-button right-arrow" onClick={nextImage}>
+          &#10095; {/* Right Arrow */}
+        </button>
       </div>
-    </div>
+
+            {/* Inquiry Form */}
+            <div className="leasing-container">
+        <h2>General Inquiry</h2>
+        <p>Have any general questions about The District? Fill out the form below and we will get back to you as soon as possible!</p>
+        <form className="leasing-form" onSubmit={handleSubmit}>
+          <label>
+            Name:
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </label>
+          <label>
+            Email:
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </label>
+          <label>
+            What are you interested in?
+            <textarea
+              name="interest"
+              value={formData.interest}
+              onChange={handleChange}
+              required
+            ></textarea>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+        {message && <p className="form-message">{message}</p>}
+      </div>
+    </div>    
   );
 }
 
