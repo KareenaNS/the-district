@@ -156,7 +156,10 @@ function Leasing() {
   };
 
   // Slideshow images
-  const slides = ['tenants.png', 'tenants2.png'];
+  const slides = [
+    process.env.PUBLIC_URL + '/the-district/tenants.png',
+    process.env.PUBLIC_URL + '/the-district/tenants2.png',
+  ];
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
@@ -239,7 +242,7 @@ function Leasing() {
 
         {/* Right: Suites image */}
         <img
-          src="Suites.png"
+          src={process.env.PUBLIC_URL + '/the-district/Suites.png'}
           alt="Suites"
           style={{
             width: '50%',

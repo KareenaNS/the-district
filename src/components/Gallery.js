@@ -44,7 +44,7 @@ function Gallery() {
       <div className="gallery-grid">
         {images.map((image, index) => (
           <div key={index} className="gallery-item">
-            <img src={image} alt={`Gallery Image ${index + 1}`} className="gallery-image" />
+            <img src={image} alt={`Gallery Image ${index + 1}`} className="gallery-image" loading="lazy" />
           </div>
         ))}
       </div>
