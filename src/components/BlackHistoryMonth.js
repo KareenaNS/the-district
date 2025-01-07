@@ -7,11 +7,11 @@ const mapImage = '/exhall-map.png';
 
 function BlackHistoryMonth() {
   return (
-    <div className="landing-page-container">
+    <div className="land-page-container">
       <h1>Black History Month</h1>
 
       {/* Event Details */}
-      <section className="event-details">
+      {/* <section className="event-detail">
         <h2>Event Details</h2>
         <img src={process.env.PUBLIC_URL + flyerImage} alt="Black History Month Flyer" className="flyer-image" />
         <p><strong>Join us for Black History Month!</strong> Reunite, celebrate, and honor traditions with this vibrant festival, delicious food, and cultural performances.</p>
@@ -19,45 +19,92 @@ function BlackHistoryMonth() {
         <p><strong>Date:</strong> February 22nd - 23rd 2025</p>
         <p><strong>Time:</strong> 5 PM - 12 AM</p>
         <p><strong>Location:</strong> Morrow Center Exhibition Hall, 1180 Southlake Circle, [Morrow, Georgia, 30260]</p>
-      </section>
+      </section> */}
+      <section className="event-detail">
+  <h2>Event Details</h2>
 
-      <section className="vendor-sponsor-container">
-  {/* Vendor Information */}
-  <section className="vendor-info">
-    <h2>Become a Vendor</h2>
-    <img src={process.env.PUBLIC_URL + '/vendor.JPG'} alt="Sponsor" className="sponsor-image" />
-    <p>If you're interested in becoming a vendor for Black History Month, here's how you can get involved:</p>
-    <ul>
-      <li>Showcase your products or services to a diverse audience.</li>
-      <li>We offer booths, tables, and various vendor options to fit your needs.</li>
-      <li>Contact us at <a href="mailto:events@morrowga.gov">events@morrowga.gov</a> to apply.</li>
-    </ul>
-  </section>
+  <img
+    src={process.env.PUBLIC_URL + flyerImage}
+    alt="Black History Month Flyer"
+    className="flyer-image"
+  />
 
-  {/* Sponsor Information */}
-  <section className="sponsor-info">
-    <h2>Become a Sponsor</h2>
-    <img src={process.env.PUBLIC_URL + '/kathy.jpg'} alt="Sponsor" className="sponsor-image" />
-    <p>Support Black History Month by becoming a sponsor! Gain exposure for your business while helping to celebrate and uplift African American culture.</p>
-    <ul>
-      <li>Different levels of sponsorship available.</li>
-      <li>Prominent logo placement and other benefits based on sponsorship tier.</li>
-      <li>Contact us at <a href="mailto:events@morrowga.gov">events@morrowga.gov</a> for more details.</li>
-    </ul>
-    <section className="pdf-section">
-    <h2>Sponsorship Package</h2>
-    <iframe
-        src={process.env.PUBLIC_URL + '/bhm25_sponsor.pdf'}
-        width="100%"
-        height="600px"
-        title="Sponsorship Package"
-    />
-    </section>
-  </section>
+  <p>
+    <strong>Join us for Black History Month!</strong> Reunite, celebrate, and
+    honor traditions with this vibrant festival, delicious food, and cultural
+    performances.
+  </p>
+
+  <div className="details-section">
+    <div>
+      <h3>ADMISSION</h3>
+      <p><span>Free</span></p>
+    </div>
+
+    <div>
+      <h3>DATE</h3>
+      <p><span>February 22nd - 23rd 2025</span></p>
+    </div>
+  </div>
+
+  <div className="details-section">
+    <div>
+      <h3>TIME</h3>
+      <p><span>5 PM - 12 AM</span></p>
+    </div>
+
+    <div>
+      <h3>LOCATION</h3>
+      <p>
+        <span>Morrow Center Exhibition Hall, 1180 Southlake Circle,
+        [Morrow, Georgia, 30260]</span>
+      </p>
+    </div>
+  </div>
 </section>
 
+
+      <section className="vendor-sponsor-contain">
+        {/* Vendor Information */}
+        <section className="vendor-infos">
+          <h2>Become a Vendor</h2>
+          <img src={process.env.PUBLIC_URL + '/vendor.JPG'} alt="Sponsor" className="sponsor-image" />
+          <p>If you're interested in becoming a vendor for Black History Month, here's how you can get involved:</p>
+          <ul style={{ color: 'white', fontSize: '1.2rem' }}>
+              <li style={{ marginBottom: '10px' }}>Showcase your products or services to a diverse audience.</li>
+              <li style={{ marginBottom: '10px' }}>We offer booths, tables, and various vendor options to fit your needs.</li>
+              <li>Contact us at <a href="mailto:events@morrowga.gov" style={{ color: '#ff6f00', textDecoration: 'underline' }}>events@morrowga.gov</a> to apply.</li>
+          </ul>
+          <h2>Vendor Registration Form</h2>
+          <iframe src="https://forms.office.com/pages/responsepage.aspx?id=Id1HTAYKMEeF20yDdtNCIB37gZsewGFNq0DLLFRK7F9UMVFUVllEWVJSWEZUTFg3VUFCWTAwRE5GQi4u&route=shorturl" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+
+        </section>
+
+        <section className="sponsor-infos">
+          <h2>Become a Sponsor</h2>
+          <img src={process.env.PUBLIC_URL + '/kathy.jpg'} alt="Sponsor" className="sponsor-image" />
+          <p>Support Black History Month by becoming a sponsor! Gain exposure for your business while helping to celebrate and uplift African American culture.</p>
+            <ul style={{ color: 'white', fontSize: '1.2rem' }}>
+              <li style={{ marginBottom: '10px' }}>Different levels of sponsorship available.</li>
+              <li style={{ marginBottom: '10px' }}>Prominent logo placement and other benefits based on sponsorship tier.</li>
+              <li style={{ marginBottom: '10px' }}>
+                Contact us at <a href="mailto:events@morrowga.gov" style={{ color: '#ff6f00', textDecoration: 'underline' }}>events@morrowga.gov</a> for more details.
+              </li>
+            </ul>
+          <section className="pdf-section">
+          <h2>Sponsorship Package</h2>
+          <iframe
+              src={process.env.PUBLIC_URL + '/bhm25_sponsor.pdf'}
+              width="100%"
+              height="600px"
+              title="Sponsorship Package"
+          />
+          </section>
+        </section>
+      </section>
+
       {/* Map of the District */}
-  <section className="map-section">
+  <section className="map-sections">
   <h2>Map of the Venue</h2>
   <p>Check out the map of the venue to find the location and nearby attractions:</p>
   
