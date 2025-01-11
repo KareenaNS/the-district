@@ -65,12 +65,41 @@ function BlackHistoryMonth() {
         return () => clearInterval(intervalId); // Clear the interval when the component is unmounted
       }, []);
       const filmArtsSignupURL = "https://lp.constantcontactpages.com/sl/VZjKd8q/BlackArtsFest"; // Your provided URL
+      const scrollers = document.querySelectorAll(".scroller");
 
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        addAnimation();
+      }
+      
+      function addAnimation() {
+        scrollers.forEach((scroller) => {
+          const scrollerInner = scroller.querySelector(".scroller__inner");
+          const scrollerContent = Array.from(scrollerInner.children);
+      
+          // Clone the content and append it at the end of the scroller
+          const clonedContent = scrollerContent.map(item => item.cloneNode(true));
+          const scrollerInnerClone = document.createElement("div");
+          scrollerInnerClone.classList.add("scroller__inner");
+          clonedContent.forEach(item => scrollerInnerClone.appendChild(item));
+          scroller.appendChild(scrollerInnerClone);
+        });
+      }
+      
 
   return (
+    
     <div className="land-page-container">
+      <div class="sponsors-banner">
+        <div class="scroller" data-animated="true" data-direction="left" data-speed="fast">
+          <div class="scroller__inner">
+            <span>Plucked Peach</span>
+            <span>The Mailroom</span>
+            <span>Business 3</span>
+            <span>Business 4</span>
+          </div>
+        </div>
+      </div>
       <h1>Black History Month</h1>
-
       {/* Event Details */}
       {/* <section className="event-detail">
         <h2>Event Details</h2>
@@ -201,7 +230,7 @@ function BlackHistoryMonth() {
           <ul style={{ color: 'white', fontSize: '1.2rem' }}>
               <li style={{ marginBottom: '10px' }}>Showcase your products or services to a diverse audience.</li>
               <li style={{ marginBottom: '10px' }}>We offer booths, tables, and various vendor options to fit your needs.</li>
-              <li>Contact us at <a href="mailto:events@morrowga.gov" style={{ color: '#ff6f00', textDecoration: 'underline' }}>events@morrowga.gov</a> to apply.</li>
+              <li>Contact us at <a href="mailto:events@morrowga.gov" style={{ color: '#ff6f00', textDecoration: 'underline' }}>events@morrowga.gov</a> for more details.</li>
           </ul>
           <h2>Vendor Registration Form</h2>
           <iframe src="https://forms.office.com/pages/responsepage.aspx?id=Id1HTAYKMEeF20yDdtNCIB37gZsewGFNq0DLLFRK7F9UMVFUVllEWVJSWEZUTFg3VUFCWTAwRE5GQi4u&route=shorturl" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>

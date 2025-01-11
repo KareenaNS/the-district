@@ -710,6 +710,7 @@ f {
 }
 /* Title styles */
 .land-page-container h1 {
+  padding-top:30px;
   font-size: 3rem;
   background: linear-gradient(0deg, #ffd700, #ffcc00, #8e5500); /* Gradient gold colors */
   -webkit-background-clip: text;
@@ -717,7 +718,6 @@ f {
   font-weight: bold;
   text-transform: uppercase; /* Optional: to make it all caps */ 
   animation: slide-up 1s ease-out forwards; /* Duration: 1s, easing: ease-out */
-
 }
 
 
@@ -936,13 +936,117 @@ h1 {
   background-position: center;  /* Centers the background */
   background-attachment: fixed; /* Keeps the background fixed when scrolling */
   font-family: Arial, sans-serif;
-  margin-top: 90px;
+  margin-top: 80px;
   margin-bottom: 90px;
   padding: 20px;
   background-color: #f0f0f0;
   color: #333;
   text-align: center;
 }
+
+
+
+/* .sponsors-banner {
+  width: 100vw;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 83px;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+.scrolling-sponsors {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 35s linear infinite;
+    transform: translateX(0); 
+}
+.scrolling-sponsors span {
+  margin: 0 40px;
+  color: white;
+  font-weight: bold;
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-200%); } 
+} */
+/* Scrollable banner container */
+.sponsors-banner {
+  width: 100vw; /* Full viewport width */
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 83px; /* Adjust this value to match the height of your navbar */
+  left: 0;
+  z-index: 999; /* Ensure the banner stays below the navbar */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+/* Scroller setup */
+.scroller {
+  display: flex;
+  justify-content: flex-start; /* Make sure the content starts from the left */
+  width: 100%; /* Ensure the scroller takes full width */
+}
+
+.scroller__inner span {
+  color: white; /* Make text white */
+  font-weight: bold; /* Optional: make text bold */
+  padding: 0 10px; /* Optional: add space between words */
+}
+.scroller__inner {
+  display: flex;
+  padding-block: 1rem;
+  gap: 2rem;
+  animation: scroll var(--_animation-duration, 30s) linear infinite; /* Animation to scroll */
+}
+
+/* Add mask effect to hide parts of the content during scrolling */
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 30s; /* Adjust to slow down the scroll */
+}
+
+/* Keyframes for scroll animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%); /* Move the items fully off the screen */
+  }
+}
+/* Duplicate content at the end (make it seamless) */
+.scroller__inner::after {
+  content: attr(data-content);
+  display: flex;
+  gap: 1rem;
+  margin-left: 2rem; /* Add space between end and duplicated beginning */
+}
+
+
+
 
 h1 {
   font-size: 2.5rem;
