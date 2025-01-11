@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import {Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -27,18 +27,6 @@ import FallFestival from './components/FallFestival';
 import ChristmasInThePark from './components/ChristmasInThePark';
 import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
 
-// Debounce function
-function debounce(func, delay) {
-  let debounceTimeout;
-  return function () {
-    clearTimeout(debounceTimeout); // Reset the timer each time a new event occurs
-    debounceTimeout = setTimeout(() => {
-      func(); // Execute the function after the delay
-    }, delay);
-  };
-}
-
-// Throttle function
 function throttle(func, limit) {
   let inThrottle;
   return function () {
@@ -53,16 +41,14 @@ function throttle(func, limit) {
 }
 
 function App() {
-    // Example of using debounce for an input field (in Home.js or another component)
-    const handleSearch = debounce(() => {
-      console.log('Search initiated');
-      // You can add your search logic here
-    }, 300);
-      // Example of using throttle for scroll events (on the window)
-  const handleScroll = throttle(() => {
-    console.log('Scroll event triggered');
-    // Your scroll logic can go here
-  }, 200);
+  const handleScroll = useCallback(
+    throttle(() => {
+      console.log('Scroll event triggered');
+      // Add your scroll-related logic here
+    }, 200),
+    [] // Empty dependency array ensures it is memoized only once
+  );
+
   useEffect(() => {
     // Attach the throttled scroll handler to the window scroll event
     window.addEventListener('scroll', handleScroll);
@@ -71,7 +57,7 @@ function App() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [handleScroll]); // Include handleScroll in dependencies to ensure cleanup works correctly
   return (
       <div className="App">
         <Navbar />

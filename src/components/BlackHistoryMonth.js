@@ -9,7 +9,6 @@ import { Navigation, Pagination } from 'swiper/modules';
 
 // Sample image paths and event details
 const flyerImage = '/bhmflyer.jpeg';
-const mapImage = '/exhall-map.png';
 const performers = [
   {
     name: 'Vedo',
@@ -63,7 +62,7 @@ function BlackHistoryMonth() {
       useEffect(() => {
         const intervalId = setInterval(nextImage, 3000); // 3000ms = 3 seconds
         return () => clearInterval(intervalId); // Clear the interval when the component is unmounted
-      }, []);
+      },);
       const filmArtsSignupURL = "https://lp.constantcontactpages.com/sl/VZjKd8q/BlackArtsFest"; // Your provided URL
       const scrollers = document.querySelectorAll(".scroller");
 

@@ -35,7 +35,7 @@ function Home() {
     useEffect(() => {
       const intervalId = setInterval(nextImage, 3000); // 3000ms = 3 seconds
       return () => clearInterval(intervalId); // Clear the interval when the component is unmounted
-    }, []);
+    });
 
     const handleChange = (e) => {
       const { name, value } = e.target;
@@ -56,6 +56,7 @@ function Home() {
 
   return (
     <div className="home-container">
+
       <div className="video-container">
       <video 
         className="full-width-video" 
@@ -63,13 +64,13 @@ function Home() {
         loop 
         muted 
         playsInline 
-        controls={false} // Optional: Hide controls for a clean look
+        controls={false}
       >
         <source src={process.env.REACT_APP_VIDEO_URL} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-
       </div>
+
       <img src={process.env.PUBLIC_URL + '/district.png'} alt="The District" className="district-logo" />
       <h2>Welcome to The District</h2>
       <div className="description-container">

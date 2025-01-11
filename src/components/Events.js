@@ -361,12 +361,27 @@ const filteredEvents = events.filter(event => {
               min={0}
               max={24}
               step={1}
-              renderTrack={(props, state) => (
-                <div {...props} style={{ ...props.style, height: '6px', backgroundColor: '#ddd', borderRadius: '5px' }} />
-              )}
-              renderThumb={(props, state) => (
-                <div {...props} style={{ ...props.style, height: '20px', width: '20px', borderRadius: '50%', backgroundColor: '#f4a261' }} />
-              )}
+              renderTrack={(props, state) => {
+                const { key, ...restProps } = props; // Extract the key
+                return (
+                  <div
+                    key={key} // Pass the key directly
+                    {...restProps}
+                    style={{ ...restProps.style, height: '6px', backgroundColor: '#ddd', borderRadius: '5px' }}
+                  />
+                );
+              }}
+              renderThumb={(props, state) => {
+                const { key, ...restProps } = props; // Extract the key
+                return (
+                  <div
+                    key={key} // Pass the key directly
+                    {...restProps}
+                    style={{ ...restProps.style, height: '20px', width: '20px', borderRadius: '50%', backgroundColor: '#f4a261' }}
+                  />
+                );
+              }}
+              
             />
             <div>
             <div className="time-range-display">
