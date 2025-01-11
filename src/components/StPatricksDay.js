@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import'../SPD.css';
 
 // Sample image paths and event details
 const flyerImage = '/spdflyer.jpeg';
@@ -7,11 +7,17 @@ const mapImage = '/exhall-map.png';
 
 function StPatricksDay() {
   return (
-    <div className="landing-page-container">
-      <h1>St. Patrick's Day</h1>
-
+    <div className="landi-page-container">
+      <h1>
+        <img
+          src={process.env.PUBLIC_URL + '/spd.png'} // Ensure the image path is correct
+          alt="St. Patrick's Day"
+          className="header-image"
+        />
+        <span className="header-text">St. Patrick's Day</span>
+      </h1>
       {/* Event Details */}
-      <section className="event-details">
+      <section className="event-detail">
         <h2>Event Details</h2>
         <img src={process.env.PUBLIC_URL + flyerImage} alt="St. Patrick's Day Flyer" className="flyer-image" />
         <p><strong>Join us for St. Patrick's Day!</strong> Experience music, dancing, and indulging in food to celebrate this occasion</p>
@@ -21,9 +27,9 @@ function StPatricksDay() {
         <p><strong>Location:</strong> The District, 1065 Olde Towne Morrow Road, [Morrow, Georgia, 30260]</p>
       </section>
 
-      <section className="vendor-sponsor-container">
+      <section className="vendor-sponsor-contain">
   {/* Vendor Information */}
-  <section className="vendor-info">
+  <section className="vendor-infos">
     <h2>Become a Vendor</h2>
     <img src={process.env.PUBLIC_URL + '/vendor.JPG'} alt="Sponsor" className="sponsor-image" />
     <p>If you're interested in becoming a vendor for St. Patrick's Day, here's how you can get involved:</p>
@@ -35,7 +41,7 @@ function StPatricksDay() {
   </section>
 
   {/* Sponsor Information */}
-  <section className="sponsor-info">
+  <section className="sponsor-infos">
     <h2>Become a Sponsor</h2>
     <img src={process.env.PUBLIC_URL + '/kathy.jpg'} alt="Sponsor" className="sponsor-image" />
     <p>Support St. Patrick's Day by becoming a sponsor! Gain exposure for your business while helping to celebrate and uplift African American culture.</p>

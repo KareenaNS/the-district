@@ -1,0 +1,187 @@
+.landi-page-container {
+    background-image: url('/public/green.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+  }
+  
+  .landi-page-container h1 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Make the header fill the viewport height */
+    margin-top: 0;
+    margin-bottom: 0%;
+    padding: 0; /* Remove padding */
+    color: #333;
+  }
+  
+  .header-image {
+    width: 100%; /* Set width to 100% of the viewport */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    display: block; /* Ensure the image is displayed as a block element */
+  }
+  
+  .header-text {
+    position: absolute; /* Position the text over the image */
+    top: 50%; /* Vertically center the text */
+    left: 50%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    font-size: 4rem; /* Adjust the font size */
+    background: linear-gradient(0deg, #ffffff, #baffb8, #00f960); /* Gradient gold colors */
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #1a331a; 
+    z-index: 99; /* Ensure the text is in front of the image */
+    animation: animateText 2s infinite;
+  }
+  
+  @keyframes animateText {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.1);
+      opacity: 0.7;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+
+  .event-detail {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff; /* White text for readability */
+    max-width: 800px; /* Optional: max width for the event details */
+    margin: 0 auto; /* Center the content */
+  }
+  .event-detail h2 {
+    background: linear-gradient(0deg, #ffd700, #ffcc00, #8e5500); /* Gradient gold colors */
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  .event-detail p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff; /* White text for readability */
+  }
+  .event-detail p span {
+    font-weight: bold;
+    color: black; /* Orange for specific details like date/time */
+  }
+  .event-detail .details-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  .event-detail .details-section div {
+    width: 48%;
+    background: #d7aef5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .event-detail .details-section div h3 {
+    color: #6d21a3;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .event-detail .details-section div p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  
+@media (max-width: 768px) {
+    .vendor-sponsor-contain {
+      flex-direction: column;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .vendor-infos, .sponsor-infos {
+      min-width: auto;
+      width: 100%;
+    }
+  }
+  .vendor-sponsor-contain {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .vendor-infos, .sponsor-infos {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Equal width for both sections */
+    min-width: 280px; /* Ensures sections are not too small */
+  }
+  .vendor-infos h2, .sponsor-infos h2 {
+    font-size: 2rem;
+    background: linear-gradient(0deg, #ffd700, #ffcc00, #8e5500); /* Gradient gold colors */
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .vendor-infos p, .sponsor-infos p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+    font-weight: bold;
+  }
+  .vendor-infos ul, .sponsor-infos ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+  }
+  .sponsor-image {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 15px;
+    border-radius: 8px;
+  }
+  
+
+  /* Map Section */
+.map-section {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  .map-section h2 {
+    font-size: 2rem;
+    background: linear-gradient(0deg, #ffd700, #ffcc00, #8e5500); /* Gradient gold colors */
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .map-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+    font-weight: bold;
+  }
