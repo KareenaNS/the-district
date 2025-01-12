@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from React Router for navigation
-import emailjs from 'emailjs-com'; // Import the emailjs SDK
-import '../App.css'; // Import App.css for global styling
+import { Link } from 'react-router-dom'; 
+import emailjs from 'emailjs-com'; 
+import '../App.css'; 
 
 function Home() {
-    // State to manage the current image index
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [formData, setFormData] = useState({
       name: '',
@@ -22,6 +21,7 @@ function Home() {
       process.env.PUBLIC_URL + '/storefront4.jpg',
       process.env.PUBLIC_URL + '/house4.jpg',
     ];
+
     const nextImage = () => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
@@ -32,9 +32,10 @@ function Home() {
         prevIndex === 0 ? images.length - 1 : prevIndex - 1
       );
     };
+
     useEffect(() => {
-      const intervalId = setInterval(nextImage, 3000); // 3000ms = 3 seconds
-      return () => clearInterval(intervalId); // Clear the interval when the component is unmounted
+      const intervalId = setInterval(nextImage, 3000);
+      return () => clearInterval(intervalId);
     });
 
     const handleChange = (e) => {
@@ -58,20 +59,25 @@ function Home() {
     <div className="home-container">
 
       <div className="video-container">
-      <video 
-        className="full-width-video" 
-        autoPlay 
-        loop 
-        muted 
-        playsInline 
-        controls={false}
-      >
-        <source src={process.env.REACT_APP_VIDEO_URL} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+        <video 
+          className="full-width-video" 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          controls={false}
+        >
+          <source src={process.env.REACT_APP_VIDEO_URL} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
-      <img src={process.env.PUBLIC_URL + '/district.png'} alt="The District" className="district-logo" />
+      <img 
+        src={process.env.PUBLIC_URL + '/district.png'} 
+        alt="The District" 
+        className="district-logo" 
+        loading="lazy" 
+      />
       <h2>Welcome to The District</h2>
       <div className="description-container">
         <p>
@@ -83,8 +89,13 @@ function Home() {
 
       <div className="info-columns">
         <div className="column">
-        <img src={process.env.PUBLIC_URL + '/storefront.png'} alt="Leasing a Suite" className="column-image" />
-        <h3>Leasing a Suite</h3>
+          <img 
+            src={process.env.PUBLIC_URL + '/storefront.png'} 
+            alt="Leasing a Suite" 
+            className="column-image" 
+            loading="lazy" 
+          />
+          <h3>Leasing a Suite</h3>
           <p>
             Discover premium suites available for leasing at The District, perfect for businesses
             or private events.
@@ -94,8 +105,13 @@ function Home() {
           </Link>
         </div>
         <div className="column">
-        <img src={process.env.PUBLIC_URL + '/hosting.JPG'} alt="Hosting an Event" className="column-image" />
-        <h3>Hosting Your Event</h3>
+          <img 
+            src={process.env.PUBLIC_URL + '/hosting.JPG'} 
+            alt="Hosting an Event" 
+            className="column-image" 
+            loading="lazy" 
+          />
+          <h3>Hosting Your Event</h3>
           <p>
             Book and host your own event with ease. Our venue offers exceptional services to make your event memorable.
           </p>
@@ -104,8 +120,13 @@ function Home() {
           </Link>
         </div>
         <div className="column">
-        <img src={process.env.PUBLIC_URL + '/city.jpg'} alt="City-Hosted Events" className="column-image" />
-        <h3>City-Hosted Events</h3>
+          <img 
+            src={process.env.PUBLIC_URL + '/city.jpg'} 
+            alt="City-Hosted Events" 
+            className="column-image" 
+            loading="lazy" 
+          />
+          <h3>City-Hosted Events</h3>
           <p>
             Join us for events organized by the city, from concerts to festivals, right here at The District.
           </p>
@@ -114,23 +135,23 @@ function Home() {
           </Link>
         </div>
       </div>
-      {/* Slideshow Section */}
+
       <div className="slideshow-container">
         <button className="arrow-button left-arrow" onClick={prevImage}>
-          &#10094; {/* Left Arrow */}
+          &#10094;
         </button>
         <img
-          src={images[currentImageIndex]} // Display the current image based on index
+          src={images[currentImageIndex]}
           alt="Event Image"
           className="slideshow-image"
+          loading="lazy" 
         />
         <button className="arrow-button right-arrow" onClick={nextImage}>
-          &#10095; {/* Right Arrow */}
+          &#10095;
         </button>
       </div>
 
-            {/* Inquiry Form */}
-            <div className="leasing-container">
+      <div className="leasing-container">
         <h2>General Inquiry</h2>
         <p>Have any general questions about The District? Fill out the form below and we will get back to you as soon as possible!</p>
         <form className="leasing-form" onSubmit={handleSubmit}>
