@@ -6,10 +6,13 @@
     <meta name="theme-color" content="#000000" />
     <link rel="icon" href="%PUBLIC_URL%/district.png" />
     <title>The District</title>
-    <!-- <base href="/the-district/" /> -->
     <script type="text/javascript">
+      // Redirect all unknown routes to index.html for React to handle
       if (window.location.hostname === 'thedistrictmorrow.com') {
         window.location.href = 'https://www.thedistrictmorrow.com' + window.location.pathname + window.location.search;
+      } else {
+        // GitHub Pages SPA fix: Redirect to index.html
+        window.location.replace('/');
       }
     </script>
   </head>
