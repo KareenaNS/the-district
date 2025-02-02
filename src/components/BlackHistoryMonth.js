@@ -95,12 +95,18 @@ function BlackHistoryMonth() {
           data-speed="fast"
         >
           <div class="scroller__inner">
-            <a href="https://www.pluckedpeach.com" target="_blank">
+            <a href="https://www.thepluckedpeach.com" target="_blank">
               <span>Plucked Peach</span>
             </a>
-            <span>The Mailroom</span>
-            <span>Business 3</span>
-            <span>Business 4</span>
+            <a href="https://www.themailroomonline.com/" target="_blank">
+              <span>The Mailroom</span>
+            </a>
+            <a href="https://www.beautymaster.com/" target="_blank">
+              <span>Beauty Master</span>
+            </a>
+            <a href="https://www.skiplinow.com/shop/-M1DAWQVUIzYPraAjtNM" target="_blank">
+              <span>VN Pho</span>
+            </a>
           </div>
         </div>
       </div>
@@ -140,7 +146,10 @@ function BlackHistoryMonth() {
           <div>
             <h3>TIME</h3>
             <p>
-              <span>5 PM - 12 AM</span>
+              <span>Saturday: Noon - 11 PM</span>
+            </p>
+            <p>
+              <span>Sunday: 1 PM - 8 PM</span>
             </p>
           </div>
 

@@ -14,13 +14,13 @@ function Booking() {
       <div className="contact-info">
         <p className="contact-title">Contact Information</p>
         <p>
-          <strong>Email:</strong>
+          <strong>Email: </strong>
           <a className="contact-link" href="mailto:events@morrowga.gov">
           events@morrowga.gov
           </a>
         </p>
         <p>
-          <strong>Phone:</strong>
+          <strong>Phone: </strong>
           <a className="contact-link" href="tel:+14707732708">470-773-2708</a>
         </p>
       </div>
