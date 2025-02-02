@@ -10,7 +10,7 @@ const SearchBar = () => {
   const handleSearch = async () => {
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:3000/search", { query });
+      const response = await axios.post("https://the-district.onrender.com/search-events", { query });
       setResults(response.data);
     } catch (error) {
       console.error("Search error:", error);
@@ -22,7 +22,7 @@ const SearchBar = () => {
     <div style={{ width: "400px", margin: "auto", textAlign: "center" }}>
       <TextField
         fullWidth
-        label="Search for venues..."
+        label="Search for events..."
         variant="outlined"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
@@ -35,14 +35,15 @@ const SearchBar = () => {
       {loading && <CircularProgress style={{ marginTop: "20px" }} />}
 
       <List>
-        {results.map((venue) => (
-          <ListItem key={venue.id}>
+        {results.map((event) => (
+          <ListItem key={event.id}>
             <div>
-              <h3>{venue.name}</h3>
-              <p>{venue.description}</p>
-              <p><strong>Location:</strong> {venue.location}</p>
-              <p><strong>Price:</strong> ${venue.price}</p>
-              <p><strong>Capacity:</strong> {venue.capacity} people</p>
+              <h3>{event.name}</h3>
+              <p>{event.description}</p>
+              <p><strong>Date:</strong> {new Date(event.date).toLocaleString()}</p>
+              <p><strong>Location:</strong> {event.location}</p>
+              <p><strong>Price:</strong> ${event.price}</p>
+              <p><strong>Participants:</strong> {event.participants}</p>
             </div>
           </ListItem>
         ))}

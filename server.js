@@ -70,8 +70,46 @@ app.post("/add-venue", async (req, res) => {
   }
 });
 
+// **1️⃣ Add Event to Firestore**
+app.post("/add-event", async (req, res) => {
+  try {
+    const { id, name, date, location, description, organizer, participants, bookingStatus, price, type, features } = req.body;
+
+    // Convert event description into AI vector embedding
+    const response = await openai.embeddings.create({
+      input: description,
+      model: "text-embedding-ada-002",
+    });
+    const embedding = response.data[0].embedding;
+
+    // Store event data in Firestore
+    await db.collection("events").doc(id).set({
+      id,
+      name,
+      date,
+      location,
+      description,
+      organizer,
+      participants,
+      bookingStatus,
+      price,
+      type,
+      features,
+    });
+
+    // Store the vector in Pinecone for AI search
+    await index.upsert([{ id, values: embedding }]);
+
+    res.json({ message: "Event added successfully!" });
+  } catch (error) {
+    console.error("Error adding event:", error);
+    res.status(500).json({ error: "Failed to add event" });
+  }
+});
+
 // **2️⃣ AI-Powered Search API**
-app.post("/search", async (req, res) => {
+// **2️⃣ AI-Powered Search for Events**
+app.post("/search-events", async (req, res) => {
   try {
     const { query } = req.body;
 
@@ -82,27 +120,28 @@ app.post("/search", async (req, res) => {
     });
     const queryEmbedding = response.data[0].embedding;
 
-    // Search in Pinecone
+    // Search for matching events in Pinecone
     const results = await index.query({
       vector: queryEmbedding,
       topK: 5,
       includeMetadata: true,
     });
 
-    // Get venue details from Firestore
-    const venueIds = results.matches.map((match) => match.id);
-    const venuePromises = venueIds.map(async (id) => {
-      const doc = await db.collection("venues").doc(id).get();
+    // Get event details from Firestore
+    const eventIds = results.matches.map((match) => match.id);
+    const eventPromises = eventIds.map(async (id) => {
+      const doc = await db.collection("events").doc(id).get();
       return doc.exists ? doc.data() : null;
     });
-    const venues = (await Promise.all(venuePromises)).filter(Boolean);
+    const events = (await Promise.all(eventPromises)).filter(Boolean);
 
-    res.json(venues);
+    res.json(events);
   } catch (error) {
-    console.error("Error searching venues:", error);
+    console.error("Error searching events:", error);
     res.status(500).json({ error: "Search failed" });
   }
 });
+
 
 // **🎯 Serve React App for all other routes**
 app.get("*", (req, res) => {
