@@ -12,6 +12,36 @@ body {
   z-index: 100;
 }
 
+.navbar-search {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position below the navbar */
+  width: 90%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navbar-search.open {
+  display: flex;
+}
+
+.navbar-input {
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.search-button {
+  padding: 10px;
+  background-color: #d32f2f;
+  border-radius: 4px;
+}
+
+.mobile-search-button {
+  display: none;
+}
+
 .navbar-content {
   display: flex;
   justify-content: space-between;
@@ -61,6 +91,14 @@ body {
 }
 
 @media (max-width: 768px) {
+  .navbar-search {
+    display: none;
+  }
+
+  .mobile-search-button {
+    display: inline-block;  /* Visible on mobile */
+  }
+
   .navbar-content {
     flex-wrap: nowrap;
     overflow: hidden;
@@ -210,7 +248,7 @@ footer {
   padding: 10px 20px;
   font-size: 14px;
   color: #fff;
-  background-color: #007bff;
+  background-color: #d32f2f;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -219,7 +257,7 @@ footer {
 }
 
 .column-button:hover {
-  background-color: #0056b3;
+  background-color: #912020;
 }
 
 .leasing-container {
@@ -269,14 +307,14 @@ footer {
   padding: 10px 20px;
   font-size: 16px;
   color: #fff;
-  background-color: #007bff;
+  background-color: #d32f2f;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .leasing-form button:hover {
-  background-color: #0056b3;
+  background-color: #912020;
 }
 
 .form-message {

@@ -16,7 +16,7 @@ const express = require("express");
 const path = require("path");
 const admin = require("firebase-admin");
 const { OpenAI } = require("openai");
-const { Pinecone } = require("@pinecone-database/pinecone");
+const { Pinecone, PineconeClient } = require("@pinecone-database/pinecone");
 
 // Initialize Express
 const app = express();
@@ -30,14 +30,18 @@ admin.initializeApp({
 });
 const db = admin.firestore();
 
-// OpenAI API Setup
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-// Pinecone Setup
-const pinecone = new Pinecone({ apiKey: process.env.PINECONE_API_KEY });
-const index = pinecone.index("venues"); // Change to your Pinecone index name
+const pinecone = new PineconeClient();
+const index = pinecone.Index('gen-search'); // Replace with your index name
 
-// **1️⃣ API to Add Venues**
+pinecone.init({
+  apiKey: 'your-pinecone-api-key', // Replace with your actual Pinecone API key
+  environment: 'us-east-1', // Replace with your Pinecone environment region (e.g., 'us-east-1')
+  host: 'https://gen-search-5kbu9fz.svc.aped-4627-b74a.pinecone.io', // Your Pinecone host URL
+});
+
+
 app.post("/add-venue", async (req, res) => {
   try {
     const { id, name, description, location, price, capacity, features } = req.body;
