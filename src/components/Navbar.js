@@ -102,7 +102,7 @@ function Navbar({ onSearch }) {
           <img src={process.env.PUBLIC_URL + '/district.png'} alt="The District" className="navbar-image" />
         </Link>
 
-        {/* Search Bar */}
+        {/* Search Bar
         <form onSubmit={handleSearchSubmit} className={`navbar-search ${searchVisible ? 'open' : ''}`}>
           <InputBase
             value={searchQuery}
@@ -116,7 +116,6 @@ function Navbar({ onSearch }) {
           </IconButton>
         </form>
 
-        {/* Mobile Search Button */}
         <Button 
           variant="contained" 
           color="secondary" 
@@ -128,7 +127,7 @@ function Navbar({ onSearch }) {
           }}
         >
           {searchVisible ? 'Close Search' : 'Open Search'}
-        </Button>
+        </Button> */}
 
         {/* Menu Button for Mobile */}
         <button className="menu-toggle" onClick={toggleMenu}>

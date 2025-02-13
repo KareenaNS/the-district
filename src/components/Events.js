@@ -2,19 +2,18 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../App.css";
 import Calendar from "react-calendar";
-import ReactSlider from "react-slider";
 
 const events = [
-  {
-    name: "Lunar New Year",
-    description:
-      "Join us for Lunar New Year! Reunite, celebrate, and honor traditions with this vibrant festival, delicious food, and cultural performances.",
-    date: "01/25/25 - 01/26/25",
-    time: "10:00 AM - 12:00 AM",
-    location: "morrow-center",
-    imageUrl: "/lny.png",
-    link: "/LunarNewYear",
-  },
+  // {
+  //   name: "Lunar New Year",
+  //   description:
+  //     "Join us for Lunar New Year! Reunite, celebrate, and honor traditions with this vibrant festival, delicious food, and cultural performances.",
+  //   date: "01/25/25 - 01/26/25",
+  //   time: "10:00 AM - 12:00 AM",
+  //   location: "morrow-center",
+  //   imageUrl: "/lny.png",
+  //   link: "/LunarNewYear",
+  // },
   {
     name: "Black History Month",
     description:

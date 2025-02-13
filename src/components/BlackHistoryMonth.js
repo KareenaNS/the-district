@@ -107,6 +107,21 @@ function BlackHistoryMonth() {
             <a href="https://www.skiplinow.com/shop/-M1DAWQVUIzYPraAjtNM" target="_blank">
               <span>VN Pho</span>
             </a>
+            <a href="https://www.flyfrontier.com/" target="_blank">
+              <span>Frontier</span>
+            </a>
+            <a href="https://www.hilton.com/en/hotels/atlslhx-hampton-atlanta-southlake/" target="_blank">
+              <span>Hampton Inn</span>
+            </a>
+            <a href="https://404sportsbar.com/" target="_blank">
+              <span>404 Sports Bar & Grill</span>
+            </a>
+            <a href="https://www.atdentalcenter.com/" target="_blank">
+              <span>AT Dental</span>
+            </a>
+            <a href="https://atlphillyitalian.com/" target="_blank">
+              <span>Atlanta Philly & Subs</span>
+            </a>
           </div>
         </div>
       </div>
