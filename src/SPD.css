@@ -1,5 +1,5 @@
 .landi-page-container {
-    background-image: url('/public/green.gif');
+    background-image: url('/public/Fruit.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -15,7 +15,7 @@
   .landi-page-container h1 {
     position: relative;
     width: 100%;
-    height: 100vh; /* Make the header fill the viewport height */
+    height: 550px; /* Make the header fill the viewport height */
     margin-top: 0;
     margin-bottom: 0%;
     padding: 0; /* Remove padding */
@@ -43,6 +43,35 @@
     -webkit-text-stroke: 1px #1a331a; 
     z-index: 99; /* Ensure the text is in front of the image */
     animation: animateText 2s infinite;
+  }
+
+  .h-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    background: #3f7e07;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #1a331a; 
+    z-index: 99;
+  }
+  .headers-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    background: #3f7e07;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #1a331a; 
+    z-index: 99;
   }
   
   @keyframes animateText {
@@ -185,3 +214,31 @@
     color: white;
     font-weight: bold;
   }
+  /* Container that holds both the custom map and Google Map iframe */
+.map-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between both maps */
+}
+
+.custom-map img {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto;
+}
+
+.google-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile view - Stack the maps vertically */
+@media (max-width: 768px) {
+  .map-container {
+    flex-direction: column; /* Stack the maps on top of each other */
+  }
+
+  .custom-map, .google-map {
+    width: 100%; /* Ensure both maps take full width */
+    margin-bottom: 20px; /* Add some space between the maps */
+  }
+}

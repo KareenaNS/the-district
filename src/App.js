@@ -116,6 +116,7 @@ import DiaDeLosMuertos from './components/DiaDeLosMuertos';
 import VeteransDay from './components/VeteransDay';
 import FallFestival from './components/FallFestival';
 import ChristmasInThePark from './components/ChristmasInThePark';
+import FarmersMarket from './components/FarmersMarket';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -173,6 +174,8 @@ function App() {
         <Route path="/VeteransDay" element={<VeteransDay />} />
         <Route path="/FallFestival" element={<FallFestival />} />
         <Route path="/ChristmasInThePark" element={<ChristmasInThePark />} />
+        <Route path="/FarmersMarket" element={<FarmersMarket />} />
+        
       </Routes>
       <Footer />
     </div>

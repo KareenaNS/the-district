@@ -14,26 +14,26 @@ const events = [
   //   imageUrl: "/lny.png",
   //   link: "/LunarNewYear",
   // },
-  {
-    name: "Black History Month",
-    description:
-      "Come out for Black History Month! A cultural celebration, including food, art, and music, of black history in the United States.",
-    date: "02/22/25 - 02/23/25",
-    time: "2:00 PM - 12:00 AM",
-    location: "morrow-center",
-    imageUrl: "/bhm25.png",
-    link: "/BlackHistoryMonth",
-  },
-  {
-    name: "St. Patrick's Day",
-    description:
-      "Experience music, dancing, and indulging in food to celebrate this occasion!",
-    date: "03/15/25",
-    time: "5:00 PM - 11:00 PM",
-    location: "district",
-    imageUrl: "/spd25.png",
-    link: "/StPatricksDay",
-  },
+  // {
+  //   name: "Black History Month",
+  //   description:
+  //     "Come out for Black History Month! A cultural celebration, including food, art, and music, of black history in the United States.",
+  //   date: "02/22/25 - 02/23/25",
+  //   time: "2:00 PM - 12:00 AM",
+  //   location: "morrow-center",
+  //   imageUrl: "/bhm25.png",
+  //   link: "/BlackHistoryMonth",
+  // },
+  // {
+  //   name: "St. Patrick's Day",
+  //   description:
+  //     "Experience music, dancing, and indulging in food to celebrate this occasion!",
+  //   date: "03/15/25",
+  //   time: "5:00 PM - 11:00 PM",
+  //   location: "district",
+  //   imageUrl: "/spd25.png",
+  //   link: "/StPatricksDay",
+  // },
   {
     name: "Cinco De Mayo",
     description:
