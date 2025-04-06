@@ -175,7 +175,6 @@ function App() {
         <Route path="/FallFestival" element={<FallFestival />} />
         <Route path="/ChristmasInThePark" element={<ChristmasInThePark />} />
         <Route path="/FarmersMarket" element={<FarmersMarket />} />
-        
       </Routes>
       <Footer />
     </div>

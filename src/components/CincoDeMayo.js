@@ -135,7 +135,7 @@ function CincoDeMayo() {
           <div>
             <h3>DATE</h3>
             <p>
-              <span>March 3rd, 2025</span>
+              <span>May 3rd, 2025</span>
             </p>
           </div>
         </div>
@@ -257,6 +257,16 @@ function CincoDeMayo() {
               for more details.
             </li>
           </ul>
+          <h2>Vendor Payment Links</h2>
+            <p>Interested in paying for a slot at our Cinco De Mayo event? Click the button below!</p>
+            <a
+              href="https://morrowga.gov/tc-events/cinco-de-mayo/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-button"
+            >
+              Payment Links for Vendors
+            </a>
           <h2>Vendor Registration Form</h2>
           <iframe
             src="https://forms.office.com/Pages/ResponsePage.aspx?id=Id1HTAYKMEeF20yDdtNCINTtYiHrpEpAhDG5XILqbJNUMDFVSFZYT0dET0VWUUhENUlNMUhTVE5KSC4u&origin=Invitation&channel=0"
