@@ -119,37 +119,42 @@ function CincoDeMayo() {
         />
 
         <p>
-          <strong>Join us for Cinco De Mayo!</strong> Reunite, celebrate,
-          and honor traditions with this vibrant festival, delicious food, and
-          cultural performances.
+          <strong>Join us for Cinco De Mayo! </strong> 
+          Reunite, celebrate, and honor traditions with this vibrant festival, delicious food, 
+          and cultural performances.
+        </p>
+        <p>
+          <strong>¡Únete a nosotros para el Cinco de Mayo! </strong>  
+          Reúna, celebre y honre las tradiciones con este vibrante festival, deliciosa comida, y 
+          actuaciones culturales.
         </p>
 
         <div className="details-section">
           <div>
-            <h3>ADMISSION</h3>
+            <h3>ENTRADA / ADMISSION</h3>
             <p>
-              <span>Free</span>
+              <span>Libre / FREE</span>
             </p>
           </div>
 
           <div>
-            <h3>DATE</h3>
+            <h3>FECHA / DATE</h3>
             <p>
-              <span>May 3rd, 2025</span>
+              <span>3 de Mayo / May 3rd, 2025</span>
             </p>
           </div>
         </div>
 
         <div className="details-section">
           <div>
-            <h3>TIME</h3>
+            <h3>TIEMPO / TIME</h3>
             <p>
-              <span>Saturday: 5 - 11 PM</span>
+              <span>El Sabado a 5 hasta 11 de la noche / Saturday: 5 - 11 PM</span>
             </p>
           </div>
 
           <div>
-            <h3>LOCATION</h3>
+            <h3>LOCACIÓN / LOCATION</h3>
             <p>
               <span>
                 The District, 1065 Olde Towne Morrow, [Morrow,
@@ -162,7 +167,7 @@ function CincoDeMayo() {
 
       <section className="film-arts-entertainer-container">
         <div className="enter-tainer-infos">
-          <h2>Headliners</h2>
+          <h2>Headliners / Los artistas</h2>
           <p>Here's who you can expect at our event:</p>
           <Swiper
             modules={[Pagination, Navigation]}
