@@ -277,7 +277,7 @@ function Juneteenth() {
             sign up.
           </p>
           <a
-            href=""
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfbKEh5Gu9_h4SF6trBWECYuRAlBXgPSGONY_BKPrt3bzZzlw/viewform"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button"

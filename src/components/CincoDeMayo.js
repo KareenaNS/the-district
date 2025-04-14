@@ -81,7 +81,7 @@ function CincoDeMayo() {
   }
 
   return (
-    <div className="land-page-container">
+    <div className="landin-page-container">
       <div class="sponsors-banner">
         <div
           class="scroller"

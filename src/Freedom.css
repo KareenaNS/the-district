@@ -179,6 +179,38 @@ body {
     text-align: center;
     padding: 1em 0;
   }
+  .responsive-panel-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .responsive-panel h1 {
+    padding-top: 30px;
+    font-size: 3rem;
+    background: linear-gradient(0deg, #ffd700, #ffcc00, #8e5500);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: slide-up 1s ease-out forwards;
+  }
+  .responsive-panel {
+    flex: 1;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+  }
+  
+  @media (min-width: 768px) {
+    .responsive-panel-container {
+      flex-direction: row;
+    }
+  
+    .responsive-panel {
+      max-width: 33.3333%;
+    }
+  }
   
   .footer {
     background-color: #333;
@@ -971,8 +1003,8 @@ body {
     color: #333;
     text-align: center;
   }
-  .landin-page-container {
-    background-image: url("/public/cincobg.jpg");
+  .land-container {
+    background-image: url("/public/freedom_bg.png");
     background-color: #9c4400;
     background-size: cover;
     background-position: center;
@@ -985,10 +1017,10 @@ body {
     color: #333;
     text-align: center;
   }
-  .landin-page-container h1 {
+  .land-container h1 {
     padding-top: 30px;
     font-size: 3rem;
-    background: linear-gradient(0deg, #ffd700, #ffcc00, #8e5500);
+    background: linear-gradient(0deg, #ff0000, #4186ff, #4186ff);
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
@@ -1135,7 +1167,6 @@ body {
     gap: 1rem;
     margin-left: 2rem;
   }
-  
   h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -1144,26 +1175,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-  }
-  
-  .event-details {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-  }
-  .event-details h2 {
-    font-size: 2rem;
-    color: #d32f2f;
-    margin-bottom: 15px;
-  }
-  .event-details p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  
-  .event-detail {
+  }  
+  .event-detailed {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 8px;
@@ -1171,40 +1184,40 @@ body {
     max-width: 800px;
     margin: 0 auto;
   }
-  .event-detail h2 {
-    background: linear-gradient(0deg, #ffd700, #ffcc00, #8e5500);
+  .event-detailed h2 {
+    background: white;
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
   }
-  .event-detail p {
+  .event-detailed p {
     font-size: 1rem;
     line-height: 1.6;
     color: #fff;
   }
-  .event-detail p span {
+  .event-detailed p span {
     font-weight: bold;
     color: black;
   }
-  .event-detail .details-section {
+  .event-detailed .detailssection {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
   }
-  .event-detail .details-section div {
+  .event-detailed .detailssection div {
     width: 48%;
-    background: #d9ffd3;
+    background: #d3eaff;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   }
-  .event-detail .details-section div h3 {
-    color: #46a321;
+  .event-detailed .detailssection div h3 {
+    color: #2c21a3;
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 10px;
   }
-  .event-detail .details-section div p {
+  .event-detailed .detailssection div p {
     font-size: 1.1rem;
     text-align: center;
   }
@@ -1230,8 +1243,8 @@ body {
   
   
   
-  .vendor-infos, .volunteer-infos,
-  .sponsor-infos {
+  .vendor, .volunteer,
+  .sponsor {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 8px;
@@ -1239,17 +1252,17 @@ body {
     flex: 1;
     min-width: 280px;
   }
-  .vendor-infos h2, .volunteer-infos h2,
-  .sponsor-infos h2 {
+  .vendor h2, .volunteer h2,
+  .sponsor h2 {
     font-size: 2rem;
-    background: linear-gradient(0deg, #ffd700, #ffcc00, #8e5500);
+    background: linear-gradient(0deg, #ff3f3f, #a0bbe8, #4186ff);
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
     margin-bottom: 15px;
   }
-  .vendor-infos p, .volunteer-infos p,
-  .sponsor-infos p {
+  .vendor p, .volunteer p, .responsive-panel p, .responsive-panel ul,
+  .sponsor p {
     font-size: 1rem;
     line-height: 1.6;
     color: white;
@@ -1359,12 +1372,12 @@ body {
     font-size: 1rem;
     line-height: 1.6;
   }
-  .film-image {
-    max-width: 37.5%;
+
+  .j-image {
+    max-width: 80%;
     height: auto;
     margin: 20px auto;
     display: block;
-    border-radius: 100%;
   }
   @media (max-width: 768px) {
     .film-arts-entertainer-container {
@@ -1488,7 +1501,7 @@ body {
     margin-bottom: 10px;
   }
   
-  .map-section {
+  .map-section-freedom {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 8px;
@@ -1497,40 +1510,17 @@ body {
     margin-top: 40px;
   }
   
-  .map-section h2 {
+  .map-section-freedom h2 {
     font-size: 2rem;
-    color: #d9ffd3;
+    color: #d3ecff;
     margin-bottom: 15px;
   }
   
-  .map-section p {
+  .map-section-freedom p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #d9ffd3;
+    color: #d3ecff;
   }
-  
-  .map-sections {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-  }
-  .map-sections h2 {
-    font-size: 2rem;
-    background: linear-gradient(0deg, #ffd700, #ffcc00, #8e5500);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  .map-sections p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: white;
-  }
-  
   @media screen and (max-width: 768px) {
     h1 {
       font-size: 2rem;
@@ -1577,31 +1567,4 @@ body {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
   }
-  
-  /* 
-  nav {
-    background-color: #333;
-    color: white;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1em;
-  }
-  
-  nav ul li {
-    margin: 0;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  */
   

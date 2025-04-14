@@ -729,7 +729,7 @@ body {
     text-align: center;
   }
   .header-container {
-    background-image: url("/public/june_bg.png");
+    background-image: url("/public/background.jpg");
     width: 100%;
     position: relative;
     background-size: cover;
@@ -781,16 +781,6 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  .land-page-container h1 {
-    padding-top: 30px;
-    font-size: 3rem;
-    background: linear-gradient(0deg, #ffd700, #ffcc00, #8e5500);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-    text-transform: uppercase;
-    animation: slide-up 1s ease-out forwards;
   }
   
   h1 {
@@ -1016,6 +1006,16 @@ body {
     background-color: #f0f0f0;
     color: #333;
     text-align: center;
+  }
+  .land-page-container h1 {
+    padding-top: 30px;
+    font-size: 3rem;
+    background: linear-gradient(0deg, #ffd700, #ffcc00, #8e5500);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: slide-up 1s ease-out forwards;
   }
   
   /* Gallery Section */
@@ -1521,14 +1521,14 @@ body {
   
   .map-section h2 {
     font-size: 2rem;
-    color: #d9ffd3;
+    color: #d3ffe1;
     margin-bottom: 15px;
   }
   
   .map-section p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #d9ffd3;
+    color: #d3ffe9;
   }
   
   .map-sections {
