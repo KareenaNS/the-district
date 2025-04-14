@@ -12,7 +12,26 @@ function FreedomFest() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
-    process.env.PUBLIC_URL + "/freedom/june.JPG",
+    process.env.PUBLIC_URL + "/freedom/1.JPG",
+    process.env.PUBLIC_URL + "/freedom/2.JPG",
+    process.env.PUBLIC_URL + "/freedom/3.JPG",
+    process.env.PUBLIC_URL + "/freedom/4.JPG",
+    process.env.PUBLIC_URL + "/freedom/5.JPG",
+    process.env.PUBLIC_URL + "/freedom/6.JPG",
+    process.env.PUBLIC_URL + "/freedom/7.JPG",
+    process.env.PUBLIC_URL + "/freedom/8.JPG",
+    process.env.PUBLIC_URL + "/freedom/9.JPG",
+    process.env.PUBLIC_URL + "/freedom/10.JPG",
+    process.env.PUBLIC_URL + "/freedom/11.JPG",
+    process.env.PUBLIC_URL + "/freedom/12.JPG",
+    process.env.PUBLIC_URL + "/freedom/13.JPG",
+    process.env.PUBLIC_URL + "/freedom/15.JPG",
+    process.env.PUBLIC_URL + "/freedom/14.JPG",
+    process.env.PUBLIC_URL + "/freedom/16.JPG",
+    process.env.PUBLIC_URL + "/freedom/17.JPG",
+    process.env.PUBLIC_URL + "/freedom/18.JPG",
+    process.env.PUBLIC_URL + "/freedom/19.JPG",
+    process.env.PUBLIC_URL + "/freedom/20.JPG",
 
   ];
   const nextImage = () => {
@@ -247,29 +266,25 @@ function FreedomFest() {
 
       <section className="gall-container">
         <div className="gall">
-          <img src="/juneteenth/june1.JPG" alt="Event 1" />
-          <img src="/juneteenth/june2.JPG" alt="Event 2" />
-          <img src="/juneteenth/june3.JPG" alt="Event 3" />
-          <img src="/juneteenth/june4.JPG" alt="Event 4" />
-          <img src="/juneteenth/june6.JPG" alt="Event 6" />
-          <img src="/juneteenth/june7.JPG" alt="Event 7" />
-          <img src="/juneteenth/june8.JPG" alt="Event 8" />
-          <img src="/juneteenth/june9.JPG" alt="Event 9" />
-          <img src="/juneteenth/june10.JPG" alt="Event 10" />
-          <img src="/juneteenth/june11.JPG" alt="Event 11" />
-          <img src="/juneteenth/june12.JPG" alt="Event 12" />
-          <img src="/juneteenth/june13.JPG" alt="Event 13" />
-          <img src="/juneteenth/june14.JPG" alt="Event 14" />
-          <img src="/juneteenth/june15.JPG" alt="Event 15" />
-          <img src="/juneteenth/june16.JPG" alt="Event 16" />
-          <img src="/juneteenth/june17.JPG" alt="Event 17" />
-          <img src="/juneteenth/june18.JPG" alt="Event 18" />
-          <img src="/juneteenth/june19.JPG" alt="Event 19" />
-          <img src="/juneteenth/june20.JPG" alt="Event 20" />
-          <img src="/juneteenth/june21.JPG" alt="Event 21" />
-          <img src="/juneteenth/june23.JPG" alt="Event 23" />
-          <img src="/juneteenth/june24.JPG" alt="Event 24" />
-          <img src="/juneteenth/june25.JPG" alt="Event 25" />
+          <img src="/freedom/1.JPG" alt="Event 1" />
+          <img src="/freedom/2.JPG" alt="Event 2" />
+          <img src="/freedom/3.JPG" alt="Event 3" />
+          <img src="/freedom/4.JPG" alt="Event 4" />
+          <img src="/freedom/6.JPG" alt="Event 6" />
+          <img src="/freedom/7.JPG" alt="Event 7" />
+          <img src="/freedom/8.JPG" alt="Event 8" />
+          <img src="/freedom/9.JPG" alt="Event 9" />
+          <img src="/freedom/10.JPG" alt="Event 10" />
+          <img src="/freedom/11.JPG" alt="Event 11" />
+          <img src="/freedom/12.JPG" alt="Event 12" />
+          <img src="/freedom/13.JPG" alt="Event 13" />
+          <img src="/freedom/14.JPG" alt="Event 14" />
+          <img src="/freedom/15.JPG" alt="Event 15" />
+          <img src="/freedom/16.JPG" alt="Event 16" />
+          <img src="/freedom/17.JPG" alt="Event 17" />
+          <img src="/freedom/18.JPG" alt="Event 18" />
+          <img src="/freedom/19.JPG" alt="Event 19" />
+          <img src="/freedom/20.JPG" alt="Event 20" />
         </div>
       </section>
 

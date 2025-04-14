@@ -12,8 +12,29 @@ function NationalNightOut() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
-    process.env.PUBLIC_URL + "/nno/june.JPG",
-
+    process.env.PUBLIC_URL + "/nno/1.JPG",
+    process.env.PUBLIC_URL + "/nno/1.JPG",
+    process.env.PUBLIC_URL + "/nno/2.JPG",
+    process.env.PUBLIC_URL + "/nno/3.JPG",
+    process.env.PUBLIC_URL + "/nno/4.JPG",
+    process.env.PUBLIC_URL + "/nno/5.JPG",
+    process.env.PUBLIC_URL + "/nno/6.JPG",
+    process.env.PUBLIC_URL + "/nno/7.JPG",
+    process.env.PUBLIC_URL + "/nno/8.JPG",
+    process.env.PUBLIC_URL + "/nno/9.JPG",
+    process.env.PUBLIC_URL + "/nno/10.JPG",
+    process.env.PUBLIC_URL + "/nno/11.JPG",
+    process.env.PUBLIC_URL + "/nno/12.JPG",
+    process.env.PUBLIC_URL + "/nno/13.JPG",
+    process.env.PUBLIC_URL + "/nno/14.JPG",
+    process.env.PUBLIC_URL + "/nno/15.JPG",
+    process.env.PUBLIC_URL + "/nno/16.JPG",
+    process.env.PUBLIC_URL + "/nno/17.JPG",
+    process.env.PUBLIC_URL + "/nno/18.JPG",
+    process.env.PUBLIC_URL + "/nno/19.JPG",
+    process.env.PUBLIC_URL + "/nno/20.JPG",
+    process.env.PUBLIC_URL + "/nno/21.JPG",
+    process.env.PUBLIC_URL + "/nno/22.JPG",
   ];
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -160,7 +181,7 @@ function NationalNightOut() {
             className="sponsor-image"
           />
           <p>
-            If you're interested in becoming a vendor for Freedom Fest,
+            If you're interested in becoming a vendor for National Night Out,
             here's how you can get involved:
           </p>
           <ul style={{ color: "white", fontSize: "1.2rem" }}>
@@ -183,7 +204,7 @@ function NationalNightOut() {
             </li>
           </ul>
           <h2>Vendor Payment Links</h2>
-            <p>Interested in paying for a slot at Freedom Fest? Click the button below!</p>
+            <p>Interested in paying for a slot at National Night Out? Click the button below!</p>
             <a
               href="https://morrowga.gov/tc-events/national-night-out/"
               target="_blank"
@@ -210,7 +231,7 @@ function NationalNightOut() {
             className="sponsor-image"
           />
           <p>
-            Support Freedom Fest by becoming a sponsor! Gain exposure for
+            Support National Night Out by becoming a sponsor! Gain exposure for
             your business while helping to celebrate and uplift Hispanic
             culture.
           </p>
@@ -236,7 +257,7 @@ function NationalNightOut() {
           <section className="pdf-section">
             <h2>Sponsorship Package</h2>
             <iframe
-              src={process.env.PUBLIC_URL + "/freedom-sponsor.pdf"}
+              src={process.env.PUBLIC_URL + "/nno-sponsor.pdf"}
               width="100%"
               height="600px"
               title="Sponsorship Package"
@@ -247,29 +268,29 @@ function NationalNightOut() {
 
       <section className="gall-container">
         <div className="gall">
-          <img src="/juneteenth/june1.JPG" alt="Event 1" />
-          <img src="/juneteenth/june2.JPG" alt="Event 2" />
-          <img src="/juneteenth/june3.JPG" alt="Event 3" />
-          <img src="/juneteenth/june4.JPG" alt="Event 4" />
-          <img src="/juneteenth/june6.JPG" alt="Event 6" />
-          <img src="/juneteenth/june7.JPG" alt="Event 7" />
-          <img src="/juneteenth/june8.JPG" alt="Event 8" />
-          <img src="/juneteenth/june9.JPG" alt="Event 9" />
-          <img src="/juneteenth/june10.JPG" alt="Event 10" />
-          <img src="/juneteenth/june11.JPG" alt="Event 11" />
-          <img src="/juneteenth/june12.JPG" alt="Event 12" />
-          <img src="/juneteenth/june13.JPG" alt="Event 13" />
-          <img src="/juneteenth/june14.JPG" alt="Event 14" />
-          <img src="/juneteenth/june15.JPG" alt="Event 15" />
-          <img src="/juneteenth/june16.JPG" alt="Event 16" />
-          <img src="/juneteenth/june17.JPG" alt="Event 17" />
-          <img src="/juneteenth/june18.JPG" alt="Event 18" />
-          <img src="/juneteenth/june19.JPG" alt="Event 19" />
-          <img src="/juneteenth/june20.JPG" alt="Event 20" />
-          <img src="/juneteenth/june21.JPG" alt="Event 21" />
-          <img src="/juneteenth/june23.JPG" alt="Event 23" />
-          <img src="/juneteenth/june24.JPG" alt="Event 24" />
-          <img src="/juneteenth/june25.JPG" alt="Event 25" />
+          <img src="/nno/1.JPG" alt="Event 1" />
+          <img src="/nno/2.JPG" alt="Event 2" />
+          <img src="/nno/3.JPG" alt="Event 3" />
+          <img src="/nno/4.JPG" alt="Event 4" />
+          <img src="/nno/6.JPG" alt="Event 6" />
+          <img src="/nno/7.JPG" alt="Event 7" />
+          <img src="/nno/8.JPG" alt="Event 8" />
+          <img src="/nno/9.JPG" alt="Event 9" />
+          <img src="/nno/10.JPG" alt="Event 10" />
+          <img src="/nno/11.JPG" alt="Event 11" />
+          <img src="/nno/12.JPG" alt="Event 12" />
+          <img src="/nno/13.JPG" alt="Event 13" />
+          <img src="/nno/14.JPG" alt="Event 14" />
+          <img src="/nno/15.JPG" alt="Event 15" />
+          <img src="/nno/16.JPG" alt="Event 16" />
+          <img src="/nno/17.JPG" alt="Event 17" />
+          <img src="/nno/18.JPG" alt="Event 18" />
+          <img src="/nno/19.JPG" alt="Event 19" />
+          <img src="/nno/20.JPG" alt="Event 20" />
+          <img src="/nno/21.JPG" alt="Event 21" />
+          <img src="/nno/23.JPG" alt="Event 23" />
+          <img src="/nno/24.JPG" alt="Event 24" />
+          <img src="/nno/25.JPG" alt="Event 25" />
         </div>
       </section>
 
