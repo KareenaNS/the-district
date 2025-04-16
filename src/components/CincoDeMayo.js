@@ -105,6 +105,12 @@ function CincoDeMayo() {
             <a href="https://www.dnb.com/business-directory/company-profiles.tsg_recovery_services_llc.dbde237da306cd95ea72d3ca90a341a7.html" target="_blank">
               <span>TSG Services and Solutions LLC</span>
             </a>
+            <a href="https://www.facebook.com/p/BeBa-Food-Stores-100063491055703/" target="_blank">
+              <span>Beba Food Stores</span>
+            </a>
+            <a href="https://www.supermercadostalpa.com/" target="_blank">
+              <span>Talpa Supermercado</span>
+            </a>
           </div>
         </div>
       </div>

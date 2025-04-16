@@ -92,8 +92,7 @@ function ChristmasInThePark() {
 
         <p>
           <strong>Join us for Christmas In The Park! </strong> 
-          Trick-or-treat in a safe and spooky environment at our Christmas In The Park event! Bring the whole family for an evening of costumes, candy, games, music, and not-so-scary fun. It’s a festive night designed to keep the thrills high and the scares low—perfect for kids of all ages!
-</p>
+          Step into a winter wonderland where holiday magic comes alive! Join us for Christmas in the Park, a beloved seasonal tradition filled with twinkling lights, cheerful music, and festive fun for the whole family. Stroll through dazzling light displays, sip hot cocoa, meet Santa, and make unforgettable memories in a celebration that captures the true spirit of the season.</p>
 
         <div className="detailssection">
           <div>
