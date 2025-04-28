@@ -58,8 +58,8 @@ const events = [
     name: "Juneteenth",
     description:
       "This event honors the emancipation of enslaved African Americans and highlights African American culture with live performances, historical exhibits, delicious food, and community engagement!",
-    date: "06/14/25",
-    time: "5:00 PM - 10:00 PM",
+    date: "06/21/25",
+    time: "3:00 PM - 11:00 PM",
     location: "district",
     imageUrl: "/j25.png",
     link: "/Juneteenth",
@@ -79,7 +79,7 @@ const events = [
     description:
       "Join us for an evening filled with neighborhood block parties, safety demonstrations, and opportunities to connect with local law enforcement.",
     date: "08/05/25",
-    time: "5:00 PM - 10:00 PM",
+    time: "4:00 PM - 8:00 PM",
     location: "district",
     imageUrl: "/nno25.png",
     link: "/NationalNightOut",
@@ -87,8 +87,8 @@ const events = [
   {
     name: "Mexican Independence Day",
     description: "Join us for a fun day of celebrating Mexico's independence.",
-    date: "09/14/25",
-    time: "5:00 PM - 10:00 PM",
+    date: "09/13/25",
+    time: "5:00 PM - 11:00 PM",
     location: "district",
     imageUrl: "/mid25.png",
     link: "/MexicanIndependenceDay",
@@ -128,7 +128,7 @@ const events = [
     description:
       "This fun-filled evening includes costume contests, haunted houses, pumpkin decorating, and plenty of candy.",
     date: "10/25/25",
-    time: "5:00 PM - 9:00 PM",
+    time: "5:00 PM - 10:00 PM",
     location: "district",
     imageUrl: "/sh25.png",
     link: "/SafeHalloween",
@@ -138,7 +138,7 @@ const events = [
     description:
       "This fun-filled event includes learning more about the traditions behind this celebration and fun for the kids.",
     date: "11/01/25",
-    time: "5:00 PM - 9:00 PM",
+    time: "5:00 PM - 10:00 PM",
     location: "district",
     imageUrl: "/ddlm25.png",
     link: "/DiaDeLosMuertos",
@@ -148,7 +148,7 @@ const events = [
     description:
       "Join us for a day of remembrance and appreciation, including a ceremony, live music, and community activities.",
     date: "11/08/25",
-    time: "11:00 AM - 2:00 PM",
+    time: "11:00 AM - 1:00 PM",
     location: "morrow-center",
     imageUrl: "/vd25.png",
     link: "/VeteransDay",
@@ -157,8 +157,8 @@ const events = [
     name: "Fall Festival",
     description:
       "Join us for fall activities like hay rides, face painting, and pumpkin picking.",
-    date: "11/15/25",
-    time: "4:00 PM - 9:00 PM",
+    date: "10/25/25",
+    time: "10:00 AM - 3:00 PM",
     location: "district",
     imageUrl: "/fallf25.png",
     link: "/FallFestival",
@@ -168,7 +168,7 @@ const events = [
     description:
       "This magical event features a dazzling light display, holiday music, hot cocoa, and festive activities for all ages.",
     date: "12/06/25",
-    time: "4:00 PM - 9:00 PM",
+    time: "4:00 PM - 10:00 PM",
     location: "district",
     imageUrl: "/citp25.png",
     link: "/ChristmasInThePark",
