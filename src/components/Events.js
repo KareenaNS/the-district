@@ -34,21 +34,21 @@ const events = [
   //   imageUrl: "/spd25.png",
   //   link: "/StPatricksDay",
   // },
-  {
-    name: "Cinco De Mayo",
-    description:
-      "Join us for a vibrant celebration of Mexican culture and heritage on Cinco de Mayo!",
-    date: "05/03/25",
-    time: "5:00 PM - 10:00 PM",
-    location: "district",
-    imageUrl: "/cdm25.png",
-    link: "/CincoDeMayo",
-  },
+  // {
+  //   name: "Cinco De Mayo",
+  //   description:
+  //     "Join us for a vibrant celebration of Mexican culture and heritage on Cinco de Mayo!",
+  //   date: "05/03/25",
+  //   time: "5:00 PM - 10:00 PM",
+  //   location: "district",
+  //   imageUrl: "/cdm25.png",
+  //   link: "/CincoDeMayo",
+  // },
   {
     name: "Farmers Market",
     description:
       "Join us for Morrow's annual farmers market! Check out multiple vendors, and buy fresh fruit and vegetables.",
-    date: "05/03/25",
+    date: "05/10/25",
     time: "9:00 AM - 1:00 PM",
     location: "district",
     imageUrl: "/fm25.png",
