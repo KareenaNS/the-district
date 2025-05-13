@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6e0401d.css",
-    "main.js": "/static/js/main.cdc0d7bf.js",
+    "main.css": "/static/css/main.c6df0717.css",
+    "main.js": "/static/js/main.4b54266d.js",
     "static/media/background.jpg": "/static/media/background.3d266d64d2285121a6ce.jpg",
     "static/media/hippie.png": "/static/media/hippie.9791280ad62c6ec82691.png",
     "static/media/Fruit.png": "/static/media/Fruit.916d710258b0b2641767.png",
@@ -12,15 +12,16 @@
     "static/media/nno_bg.png": "/static/media/nno_bg.d6bfb9e1572b258a722d.png",
     "static/media/vetsday.png": "/static/media/vetsday.5a0a1931fd7cc1397739.png",
     "static/media/halloween.png": "/static/media/halloween.2e8e58b320d4ba943fe9.png",
+    "static/media/moon_fest.png": "/static/media/moon_fest.8f959e2399d85dde8c84.png",
     "static/media/freedom_bg.png": "/static/media/freedom_bg.a40f8de2b4c02e1c603d.png",
     "static/media/june_bg.png": "/static/media/june_bg.120f7fdddc84732608a5.png",
     "static/media/cincobg.jpg": "/static/media/cincobg.e940f125d9f29fb3cc16.jpg",
     "index.html": "/index.html",
-    "main.e6e0401d.css.map": "/static/css/main.e6e0401d.css.map",
-    "main.cdc0d7bf.js.map": "/static/js/main.cdc0d7bf.js.map"
+    "main.c6df0717.css.map": "/static/css/main.c6df0717.css.map",
+    "main.4b54266d.js.map": "/static/js/main.4b54266d.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6e0401d.css",
-    "static/js/main.cdc0d7bf.js"
+    "static/css/main.c6df0717.css",
+    "static/js/main.4b54266d.js"
   ]
 }
