@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper/modules";
 
-const flyerImage = "/freedom_flyer.png";
+const flyerImage = "/freedom_flyer.jpg";
 
 function FreedomFest() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

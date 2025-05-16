@@ -381,7 +381,7 @@ Join us for the International Night Market, a dynamic celebration of global cult
         </div>
       </section>
 
-      <section className="map-section">
+      <section className="map-sectn">
   <h2>Map of the Venue</h2>
   <p>Check out the map of the venue to find the location and nearby attractions:</p>
     <div className="map-container">
