@@ -117,6 +117,7 @@ import VeteransDay from './components/VeteransDay';
 import FallFestival from './components/FallFestival';
 import ChristmasInThePark from './components/ChristmasInThePark';
 import FarmersMarket from './components/FarmersMarket';
+import Sponsors from './components/Sponsors';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -156,6 +157,7 @@ function App() {
         <Route path="/leasing" element={<Leasing />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/sponsors" element={<Sponsors />}/>
         <Route path="/events" element={<Events />} />
         <Route path="/BlackHistoryMonth" element={<BlackHistoryMonth />} />
         <Route path="/LunarNewYear" element={<LunarNewYear />} />

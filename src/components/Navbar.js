@@ -140,6 +140,7 @@ function Navbar({ onSearch }) {
           <li><Link to="/booking">Booking</Link></li>
           <li><Link to="/gallery">Gallery</Link></li>
           <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/sponsors">Sponsors</Link></li>
         </ul>
       </div>
     </nav>
