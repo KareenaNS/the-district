@@ -116,8 +116,20 @@ function Juneteenth() {
           data-speed="fast"
         >
           <div class="scroller__inner">
-            <a href="https://morrowga.gov/" target="_blank">
-              <span>Sponsor our Event!</span>
+            <a href="https://www.centerwellprimarycare.com/en/georgia/centerwell-morrow.html?utm_medium=businesslistings&utm_campaign=gmb_atl_online-listings_en_digital_evergreen" target="_blank">
+              <span>Center Well</span>
+            </a>
+            <a href="https://www.picassossplatroom.com/" target="_blank">
+              <span>Picasso's Splat Room</span>
+            </a>
+            <a href="https://kimsbistroandbar.com/" target="_blank">
+              <span>Kim's Bistro</span>
+            </a>
+            <a href="https://www.tacobell.com/" target="_blank">
+              <span>Taco Bell</span>
+            </a>
+            <a href="https://www.instagram.com/vnjdesignsphaselll/?hl=en" target="_blank">
+              <span>VNJ Designs</span>
             </a>
           </div>
         </div>
