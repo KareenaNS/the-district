@@ -78,8 +78,35 @@ function FreedomFest() {
           data-speed="fast"
         >
           <div class="scroller__inner">
-            <a href="https://morrowga.gov/" target="_blank">
-              <span>Sponsor our Event!</span>
+            <a href="https://www.centerwellprimarycare.com/en/georgia/centerwell-morrow.html?utm_medium=businesslistings&utm_campaign=gmb_atl_online-listings_en_digital_evergreen" target="_blank">
+              <span>Center Well</span>
+            </a>
+            <a href="https://www.picassossplatroom.com/" target="_blank">
+              <span>Picasso's Splat Room</span>
+            </a>
+            <a href="https://kimsbistroandbar.com/" target="_blank">
+              <span>Kim's Bistro and Bar</span>
+            </a>
+            <a href="https://www.tacobell.com/" target="_blank">
+              <span>Taco Bell</span>
+            </a>
+            <a href="https://www.instagram.com/vnjdesignsphaselll/?hl=en" target="_blank">
+              <span>VNJ Designs</span>
+            </a>
+            <a href="https://www.dnb.com/business-directory/company-profiles.tsg_recovery_services_llc.dbde237da306cd95ea72d3ca90a341a7.html" target="_blank">
+              <span>TSG Services and Solutions LLC</span>
+            </a>
+            <a href="https://www.pelicanhillurgentcarecenter.com/" target="_blank">
+              <span>Pelican Hill Medical Center</span>
+            </a>
+            <a href="https://tea365deluxe.com/" target="_blank">
+              <span>Tea 365 Deluxe</span>
+            </a>
+            <a href="https://kathyinsurance.com/" target="_blank">
+              <span>Kathy Nguyen State Farm</span>
+            </a>
+            <a href="https://www.flyfrontier.com/" target="_blank">
+              <span>Frontier Airlines</span>
             </a>
           </div>
         </div>

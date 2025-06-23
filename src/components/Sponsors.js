@@ -101,15 +101,23 @@ const eventData = [
       "Beba Food Stores", "Talpa Supermercados", "Tran Realty", "Pelican Hill Medical Center",
       "Kim Duong State Farm", "TSG Services and Solutions LLC", "Long Merchants"
     ]
+  },
+    {
+    name: "Juneteenth + Freedom Fest",
+    sponsors: [
+      "VNJ Designs", "Kim's Bistro and Bar", "TSG Services and Solutions LLC", "Taco Bell", 
+      "Pelican Hill Medical Center", "DD Restaurant Supply", "Kathy Nguyen State Farm", 
+      "Picasso's Splat Room", "Tea 365 Deluxe", "Frontier Airlines", "CenterWell Senior Primary Care", 
+    ]
   }
 ];
 
 // Dummy images array for benefits gallery
 const benefitsGallery = [
-  { img: "/freedom/4.jpg", caption: "Massive Event Exposure" },
-  { img: "/freedom/14.jpg", caption: "On-Stage Branding" },
+  { img: "/freedom/4.JPG", caption: "Massive Event Exposure" },
+  { img: "/freedom/14.JPG", caption: "On-Stage Branding" },
   { img: "/kathy.jpg", caption: "Banners & Signage" },
-  { img: "/events/14.jpg", caption: "Networking Opportunities" },
+  { img: "/events/14.JPG", caption: "Networking Opportunities" },
   { img: "/events/4.jpg", caption: "Family Friendly Audience" }
 ];
 
