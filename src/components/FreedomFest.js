@@ -320,7 +320,7 @@ function FreedomFest() {
   <p>Check out the map of the venue to find the location and nearby attractions:</p>
     <div className="map-container">
     <div className="custom-map">
-      <img src="juneteenth_map.jpg" alt="Custom Map of the Venue" />
+      <img src="freedom_map.jpg" alt="Custom Map of the Venue" />
     </div>
     <iframe 
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13296.278572017578!2d-84.37180012464525!3d33.57754100153506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4fb0042692621%3A0xb111ea8ab9e8d63a!2sThe%20District!5e0!3m2!1sen!2sus!4v1743086323610!5m2!1sen!2sus"
