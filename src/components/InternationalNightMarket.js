@@ -5,8 +5,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper/modules";
+import ParallaxTitle from "./ParallaxTitle";
 
-const flyerImage = "/InternationalNightMarket.jpg";
+const flyerImage = "/inmflyer.jpg";
 const performers = [
   {
     name: "Undecided",
@@ -22,30 +23,34 @@ function InternationalNightMarket() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june1.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june2.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june3.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june4.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june6.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june7.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june8.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june9.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june10.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june11.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june12.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june13.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june14.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june15.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june16.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june17.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june18.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june19.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june20.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june21.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june23.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june24.JPG",
-    process.env.PUBLIC_URL + "/InternationalNightMarket/june25.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/1.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/2.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/3.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/4.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/6.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/7.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/8.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/9.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/10.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/11.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/12.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/13.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/14.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/15.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/16.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/17.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/18.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/19.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/20.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/21.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/23.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/24.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/25.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/26.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/27.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/28.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/29.JPG",
+    process.env.PUBLIC_URL + "/InternationalNightMarket/30.JPG",
   ];
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -83,6 +88,7 @@ function InternationalNightMarket() {
 
   return (
     <div className="landage-container">
+      {/* <ParallaxTitle /> */}
       <div class="sponsors-banner">
         <div
           class="scroller"
@@ -98,6 +104,7 @@ function InternationalNightMarket() {
         </div>
       </div>
       <h1>International Night Market</h1>
+
       <section className="edetails">
         <h2>Event Details</h2>
 
@@ -344,7 +351,7 @@ Join us for the International Night Market, a dynamic celebration of global cult
           <section className="pdf-section">
             <h2>Sponsorship Package</h2>
             <iframe
-              src={process.env.PUBLIC_URL + "/night-market-moon-fest-sponsor.pdf"}
+              src={process.env.PUBLIC_URL + "/inmsponsor.pdf"}
               width="100%"
               height="600px"
               title="Sponsorship Package"
@@ -355,29 +362,36 @@ Join us for the International Night Market, a dynamic celebration of global cult
 
       <section className="gall-container">
         <div className="gall">
-          <img src="/juneteenth/june1.JPG" alt="Event 1" />
-          <img src="/juneteenth/june2.JPG" alt="Event 2" />
-          <img src="/juneteenth/june3.JPG" alt="Event 3" />
-          <img src="/juneteenth/june4.JPG" alt="Event 4" />
-          <img src="/juneteenth/june6.JPG" alt="Event 6" />
-          <img src="/juneteenth/june7.JPG" alt="Event 7" />
-          <img src="/juneteenth/june8.JPG" alt="Event 8" />
-          <img src="/juneteenth/june9.JPG" alt="Event 9" />
-          <img src="/juneteenth/june10.JPG" alt="Event 10" />
-          <img src="/juneteenth/june11.JPG" alt="Event 11" />
-          <img src="/juneteenth/june12.JPG" alt="Event 12" />
-          <img src="/juneteenth/june13.JPG" alt="Event 13" />
-          <img src="/juneteenth/june14.JPG" alt="Event 14" />
-          <img src="/juneteenth/june15.JPG" alt="Event 15" />
-          <img src="/juneteenth/june16.JPG" alt="Event 16" />
-          <img src="/juneteenth/june17.JPG" alt="Event 17" />
-          <img src="/juneteenth/june18.JPG" alt="Event 18" />
-          <img src="/juneteenth/june19.JPG" alt="Event 19" />
-          <img src="/juneteenth/june20.JPG" alt="Event 20" />
-          <img src="/juneteenth/june21.JPG" alt="Event 21" />
-          <img src="/juneteenth/june23.JPG" alt="Event 23" />
-          <img src="/juneteenth/june24.JPG" alt="Event 24" />
-          <img src="/juneteenth/june25.JPG" alt="Event 25" />
+          <img src="/InternationalNightMarket/1.JPG" alt="Event 1" />
+          <img src="/InternationalNightMarket/2.JPG" alt="Event 2" />
+          <img src="/InternationalNightMarket/3.JPG" alt="Event 3" />
+          <img src="/InternationalNightMarket/4.JPG" alt="Event 4" />
+          <img src="/InternationalNightMarket/5.JPG" alt="Event 5" />
+          <img src="/InternationalNightMarket/6.JPG" alt="Event 6" />
+          <img src="/InternationalNightMarket/7.JPG" alt="Event 7" />
+          <img src="/InternationalNightMarket/8.JPG" alt="Event 8" />
+          <img src="/InternationalNightMarket/9.JPG" alt="Event 9" />
+          <img src="/InternationalNightMarket/10.JPG" alt="Event 10" />
+          <img src="/InternationalNightMarket/11.JPG" alt="Event 11" />
+          <img src="/InternationalNightMarket/12.JPG" alt="Event 12" />
+          <img src="/InternationalNightMarket/13.JPG" alt="Event 13" />
+          <img src="/InternationalNightMarket/14.JPG" alt="Event 14" />
+          <img src="/InternationalNightMarket/15.JPG" alt="Event 15" />
+          <img src="/InternationalNightMarket/16.JPG" alt="Event 16" />
+          <img src="/InternationalNightMarket/17.JPG" alt="Event 17" />
+          <img src="/InternationalNightMarket/18.JPG" alt="Event 18" />
+          <img src="/InternationalNightMarket/19.JPG" alt="Event 19" />
+          <img src="/InternationalNightMarket/20.JPG" alt="Event 20" />
+          <img src="/InternationalNightMarket/21.JPG" alt="Event 21" />
+          <img src="/InternationalNightMarket/22.JPG" alt="Event 22" />
+          <img src="/InternationalNightMarket/23.JPG" alt="Event 23" />
+          <img src="/InternationalNightMarket/24.JPG" alt="Event 24" />
+          <img src="/InternationalNightMarket/25.JPG" alt="Event 25" />
+          <img src="/InternationalNightMarket/26.JPG" alt="Event 26" />
+          <img src="/InternationalNightMarket/27.JPG" alt="Event 27" />
+          <img src="/InternationalNightMarket/28.JPG" alt="Event 28" />
+          <img src="/InternationalNightMarket/29.JPG" alt="Event 29" />
+          <img src="/InternationalNightMarket/30.JPG" alt="Event 30" />
         </div>
       </section>
 

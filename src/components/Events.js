@@ -54,26 +54,26 @@ const events = [
     imageUrl: "/fm25.png",
     link: "/FarmersMarket",
   },
-  {
-    name: "Juneteenth",
-    description:
-      "This event honors the emancipation of enslaved African Americans and highlights African American culture with live performances, historical exhibits, delicious food, and community engagement!",
-    date: "06/21/25",
-    time: "3:00 PM - 11:00 PM",
-    location: "district",
-    imageUrl: "/j25.png",
-    link: "/Juneteenth",
-  },
-  {
-    name: "Freedom Fest",
-    description:
-      "Come out for Freedom Fest, a family-friendly celebration of freedom, unity, and patriotism. Enjoy an exciting mix of live music, delicious food, games, and fireworks as we honor the spirit of independence.",
-    date: "06/28/25",
-    time: "5:00 PM - 10:00 PM",
-    location: "district",
-    imageUrl: "/ff25.png",
-    link: "/FreedomFest",
-  },
+  // {
+  //   name: "Juneteenth",
+  //   description:
+  //     "This event honors the emancipation of enslaved African Americans and highlights African American culture with live performances, historical exhibits, delicious food, and community engagement!",
+  //   date: "06/21/25",
+  //   time: "3:00 PM - 11:00 PM",
+  //   location: "district",
+  //   imageUrl: "/j25.png",
+  //   link: "/Juneteenth",
+  // },
+  // {
+  //   name: "Freedom Fest",
+  //   description:
+  //     "Come out for Freedom Fest, a family-friendly celebration of freedom, unity, and patriotism. Enjoy an exciting mix of live music, delicious food, games, and fireworks as we honor the spirit of independence.",
+  //   date: "06/28/25",
+  //   time: "5:00 PM - 10:00 PM",
+  //   location: "district",
+  //   imageUrl: "/ff25.png",
+  //   link: "/FreedomFest",
+  // },
   {
     name: "National Night Out",
     description:
