@@ -74,16 +74,16 @@ const events = [
   //   imageUrl: "/ff25.png",
   //   link: "/FreedomFest",
   // },
-  {
-    name: "National Night Out",
-    description:
-      "Join us for an evening filled with neighborhood block parties, safety demonstrations, and opportunities to connect with local law enforcement.",
-    date: "08/05/25",
-    time: "4:00 PM - 8:00 PM",
-    location: "district",
-    imageUrl: "/nno25.png",
-    link: "/NationalNightOut",
-  },
+  //{
+  //   name: "National Night Out",
+  //   description:
+  //     "Join us for an evening filled with neighborhood block parties, safety demonstrations, and opportunities to connect with local law enforcement.",
+  //   date: "08/05/25",
+  //   time: "4:00 PM - 8:00 PM",
+  //   location: "district",
+  //   imageUrl: "/nno25.png",
+  //   link: "/NationalNightOut",
+  // },
   {
     name: "Mexican Independence Day",
     description: "Join us for a fun day of celebrating Mexico's independence.",
@@ -94,25 +94,25 @@ const events = [
     link: "/MexicanIndependenceDay",
   },
   {
-    name: "International Night Market",
+    name: "Night Market / Moon Fest",
     description:
-      "Step into a world of culture, flavors, and excitement at the International Night Market! With food, crafts, and entertainment from around the globe, it’s an evening to explore diverse cultures in one place.",
+      "Step into a world of culture, flavors, and excitement at the International Night Market + Moon Festival, featuring moon-themed crafts, lantern displays, live performances, and traditional food.",
     date: "10/04/25",
     time: "2:00 PM - 12:00 AM",
     location: "district",
     imageUrl: "/inm25.png",
-    link: "/InternationalNightMarket",
+    link: "/inmmf",
   },
-  {
-    name: "Moon Festival",
-    description:
-      "This cultural event is a family favorite, featuring moon-themed crafts, lantern displays, live performances, and traditional food.",
-    date: "10/05/25",
-    time: "2:00 PM - 12:00 AM",
-    location: "district",
-    imageUrl: "/mf25.png",
-    link: "/MoonFestival",
-  },
+  // {
+  //   name: "Moon Festival",
+  //   description:
+  //     "This cultural event is a family favorite, featuring moon-themed crafts, lantern displays, live performances, and traditional food.",
+  //   date: "10/05/25",
+  //   time: "2:00 PM - 12:00 AM",
+  //   location: "district",
+  //   imageUrl: "/mf25.png",
+  //   link: "/MoonFestival",
+  // },
   {
     name: "Hippie Festival",
     description:

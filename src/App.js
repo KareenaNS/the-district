@@ -108,7 +108,7 @@ import Juneteenth from './components/Juneteenth';
 import FreedomFest from './components/FreedomFest';
 import NationalNightOut from './components/NationalNightOut';
 import MexicanIndependenceDay from './components/MexicanIndependenceDay';
-import InternationalNightMarket from './components/InternationalNightMarket';
+import Inmmf from './components/Inmmf';
 import MoonFestival from './components/MoonFestival';
 import HippieFestival from './components/HippieFestival';
 import SafeHalloween from './components/SafeHalloween';
@@ -168,7 +168,7 @@ function App() {
         <Route path="/FreedomFest" element={<FreedomFest />} />
         <Route path="/NationalNightOut" element={<NationalNightOut />} />
         <Route path="/MexicanIndependenceDay" element={<MexicanIndependenceDay />} />
-        <Route path="/InternationalNightMarket" element={<InternationalNightMarket />} />
+        <Route path="/Inmmf" element={<Inmmf />} />
         <Route path="/MoonFestival" element={<MoonFestival />} />
         <Route path="/HippieFestival" element={<HippieFestival />} />
         <Route path="/SafeHalloween" element={<SafeHalloween />} />
