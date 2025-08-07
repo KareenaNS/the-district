@@ -101,7 +101,7 @@ const events = [
     time: "2:00 PM - 12:00 AM",
     location: "district",
     imageUrl: "/inm25.png",
-    link: "/inmmf",
+    link: "/InternationalNightMarket",
   },
   // {
   //   name: "Moon Festival",
