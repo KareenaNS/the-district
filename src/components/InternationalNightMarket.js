@@ -11,27 +11,67 @@ const flyerImage = "/inmflyer.jpeg";
 const performers = [
   {
     name: "DJ Amanda Nguyen",
-    //image: process.env.PUBLIC_URL + "/pastortroy.jpg",
+    image: process.env.PUBLIC_URL + "./mf_artists/amanda_nguyen.jpg",
     day: "Saturday, October 4th",
     description:
       'Come see DJ Amanda Nguyen at Moon Festival!',
   },
     {
     name: "DJ Hailey X",
-    //image: process.env.PUBLIC_URL + "/pastortroy.jpg",
+    image: process.env.PUBLIC_URL + "./mf_artists/hailey_x.jpg",
     day: "Saturday, October 4th",
     description:
       'Come see DJ Hailey X at Moon Festival!',
   },
-      {
+  {
     name: "ATL Brother Band",
-    //image: process.env.PUBLIC_URL + "/pastortroy.jpg",
+    image: process.env.PUBLIC_URL + "./mf_artists/atl_brother.jpg",
     day: "Saturday, October 4th",
     description:
       'Come see ATL Brother Band at Moon Festival!',
   },
-
-
+  {
+    name: "Phương Uyên",
+    image: process.env.PUBLIC_URL + "./mf_artists/phuong_uyen.jpg",
+    day: "Saturday, October 4th",
+    description:
+      'Come see Phương Uyên at Moon Festival!',
+  },
+  {
+    name: "Paris Phương",
+    image: process.env.PUBLIC_URL + "./mf_artists/paris_phuong.jpg",
+    day: "Saturday, October 4th",
+    description:
+      'Come see Paris Phương at Moon Festival!',
+  },
+  {
+    name: "Thánh Lễ",
+    image: process.env.PUBLIC_URL + "./mf_artists/thanh_le.jpg",
+    day: "Saturday, October 4th",
+    description:
+      'Come see Thánh Lễ at Moon Festival!',
+  },
+  {
+    name: "Nguyên Phương Uyên",
+    image: process.env.PUBLIC_URL + "./mf_artists/phuong_nguyen_uyen.jpg",
+    day: "Saturday, October 4th",
+    description:
+      'Come see Nguyên Phương Uyên at Moon Festival!',
+  },
+    {
+    name: "Thanh Tâm",
+    image: process.env.PUBLIC_URL + "./mf_artists/thanh_tam.jpg",
+    day: "Saturday, October 4th",
+    description:
+      'Come see Thanh Tâm at Moon Festival!',
+  },    
+  {
+    name: "Phương Thảo",
+    image: process.env.PUBLIC_URL + "./mf_artists/phuong_thao.jpg",
+    day: "Saturday, October 4th",
+    description:
+      'Come see Phương Thảo at Moon Festival!',
+  },
 ];
 
 function InternationalNightMarket() {
