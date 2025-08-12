@@ -7,15 +7,30 @@ import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper/modules";
 import ParallaxTitle from "./ParallaxTitle";
 
-const flyerImage = "/inmflyer.jpg";
+const flyerImage = "/inmflyer.jpeg";
 const performers = [
   {
-    name: "Undecided",
+    name: "DJ Amanda Nguyen",
     //image: process.env.PUBLIC_URL + "/pastortroy.jpg",
     day: "Saturday, October 4th",
     description:
-      'TBD',
+      'Come see DJ Amanda Nguyen at Moon Festival!',
   },
+    {
+    name: "DJ Hailey X",
+    //image: process.env.PUBLIC_URL + "/pastortroy.jpg",
+    day: "Saturday, October 4th",
+    description:
+      'Come see DJ Hailey X at Moon Festival!',
+  },
+      {
+    name: "ATL Brother Band",
+    //image: process.env.PUBLIC_URL + "/pastortroy.jpg",
+    day: "Saturday, October 4th",
+    description:
+      'Come see ATL Brother Band at Moon Festival!',
+  },
+
 
 ];
 
@@ -97,8 +112,20 @@ function InternationalNightMarket() {
           data-speed="fast"
         >
           <div class="scroller__inner">
+            <a href="https://www.statefarm.com/agent/us/ga/morrow/kathy-nguyen-y0dwg5mlrak" target="_blank">
+              <span>State Farm Kathy Nguyen</span>
+            </a>
+            <a href="https://truecaremed.net/" target="_blank">
+              <span>TrueCare Medical</span>
+            </a>
+            <a href="https://www.unityhealthclinic.com/" target="_blank">
+              <span>Unity Health Clinic</span>
+            </a>
+            <a href="https://tracysnailjonesboro.com/" target="_blank">
+              <span>Tracy's Nails</span>
+            </a>
             <a href="https://morrowga.gov/" target="_blank">
-              <span>Sponsor our Event!</span>
+              <span>Sponsor our event!</span>
             </a>
           </div>
         </div>
@@ -315,16 +342,16 @@ Join us for the International Night Market, a dynamic celebration of global cult
               for more details.
             </li>
           </ul>
-          {/* <h2>Vendor Payment Links</h2>
+          <h2>Vendor Payment Links</h2>
             <p>Interested in paying for a slot at our International Night Market event? Click the button below!</p>
             <a
-              href="https://morrowga.gov/tc-events/international-night-out-moon-festival"
+              href="https://morrowga.gov/ticketing-home/"
               target="_blank"
               rel="noopener noreferrer"
               className="cta-button"
             >
               Payment Links for Vendors
-            </a> */}
+            </a>
           <h2>Vendor Registration Form</h2>
           <iframe
             src="https://forms.office.com/Pages/ResponsePage.aspx?id=Id1HTAYKMEeF20yDdtNCINTtYiHrpEpAhDG5XILqbJNURjJQVlcyNVY2S0U1V1hIWDhaQ1RBVUZRTy4u"
