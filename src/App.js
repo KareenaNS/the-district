@@ -118,6 +118,8 @@ import FallFestival from './components/FallFestival';
 import ChristmasInThePark from './components/ChristmasInThePark';
 import FarmersMarket from './components/FarmersMarket';
 import Sponsors from './components/Sponsors';
+import EventsBanner from './components/EventsBanner';
+import VendorPayment from './components/VendorPayment.js';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -177,6 +179,8 @@ function App() {
         <Route path="/FallFestival" element={<FallFestival />} />
         <Route path="/ChristmasInThePark" element={<ChristmasInThePark />} />
         <Route path="/FarmersMarket" element={<FarmersMarket />} />
+        <Route path="/VendorPayment" element={<VendorPayment />} />
+        <Route path="/EventsBanner" element={<EventsBanner />} />
       </Routes>
       <Footer />
     </div>

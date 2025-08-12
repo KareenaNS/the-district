@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../App.css";
 import Calendar from "react-calendar";
+import EventsBanner from './EventsBanner';
 
 const events = [
   // {
@@ -264,6 +265,11 @@ function Events() {
       <div className="header-container">
         <h1>City of Morrow Events</h1>
       </div>{" "}
+
+      <EventsBanner/>
+
+
+      
       <section className="events-container">
         <div className="sidebar">
           <div className="filters">
